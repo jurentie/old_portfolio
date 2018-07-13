@@ -71,7 +71,7 @@ footer_links:
     icon: fab fa-github-square
   - title: LinkedIn
     url: https://www.linkedin.com/in/jurentie
-    icon: fab fa-linkedin-square
+    icon: fab fa-linkedin
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
