@@ -12,6 +12,8 @@ I graduated from C.S.U. in the spring 2018 semester with a degree in [Computer S
 
 I am currently employed as a full time software developer at [Open Water Foundation](http://openwaterfoundation.org/) where I am primarily focused on java development for data processing tools as well as web development which includes creating online visualizations for collected water data.
 
+&nbsp; &nbsp;
+
 Example visualizations:
 * [SNODAS Gapminder](http://viz.openwaterfoundation.org/co/owf-viz-co-snodas-gapminder/)
 
