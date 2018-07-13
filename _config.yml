@@ -13,6 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+remote_theme: mmistakes/so-simple-theme
+local: en-US
 title: CodeOdyssey
 email: jurentie@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -20,15 +22,56 @@ description: >- # this means to ignore newlines until "baseurl:"
   as a software developer, and keep track of things learned along the way.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jurentie
-github_username:  jurentie
+logo: "/images/code-logo.svg"
+date_format: "%B %-d, %Y"
+read_time: true
+words_per_minute: 200
+mathjax: true
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+  - name: "Lora"
+    weights: "400,400i,700,700i"
+
+paginate: 10
+paginate_path: /page:num/
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
 
-remote_theme: mmistakes/so-simple-theme
+  # Site Author
+author:
+  name: Justin Rentie
+  picture: /images/justin_rentie.png
+  email:
+  twitter: jurentie
+  links:
+    - title: Twitter
+      url: https://twitter.com/jurentie
+      icon: fab fa-twitter-square
+    - title: Instagram
+      url: https://instagram.com/jurentie
+      icon: fab fa-instagram
+    - title: GitHub
+      url: https://github.com/jurentie
+      icon: fab fa-github-square
+
+# Footer Links
+footer_links:
+  - title: Twitter
+    url: https://twitter.com/jurentie
+    icon: fab fa-twitter-square
+  - title: Instagram
+    url: https://instagram.com/jurentie
+    icon: fab fa-instagram
+  - title: GitHub
+    url: https://github.com/jurentie
+    icon: fab fa-github-square
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/jurentie
+    icon: fab fa-linkedin-square
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
