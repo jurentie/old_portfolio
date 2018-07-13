@@ -1,2 +1,2 @@
 # CodeOdyssey
-My personal blog. Go to [jrcodeodyssey.com(https://jrcodeodyssey.com)
+My personal blog. Go to [jrcodeodyssey.com](https://jrcodeodyssey.com)
