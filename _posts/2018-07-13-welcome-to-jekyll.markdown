@@ -1,25 +1,18 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2018-07-13 12:00:18 -0600
-categories: jekyll update
+title:  "Introduction I"
+date:   2018-07-13 12:43:18 -0600
+categories: personal
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+# Introduction Part 1 : Finding Computer Science #
+My name is Justin Rentie. I have spent the past 4 years studying [Computer Science with a concentration in Human-Centered Computing](https://www.cs.colostate.edu/cstop/csacademics/csdegrees/csbachelors/hccmajor.php){:target="_blank"} from Colorado State University.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+> The Computer Science Human-Centered Computing concentration focuses on the design, development, and   implementation of computer interfaces, bringing together techniques from computer science and psychology to evaluate, design, and produce usable interfaces. This program aims to produce an understanding of human psychological abilities and relate them to using computational techniques to develop, implement, and test usable software interface solutions.
 
-Jekyll also offers powerful support for code snippets:
+Basically, this means that alongside my typical computer science courses I was getting a good deal of psychology in along the way. The general idea behind this is that it will help someone like me learn the necessary skills to become a software developer, as well as gain an understanding of how people operate and how people think. These types of skills could be applied to designing good User Interfaces/User Experience, as well as having applications in the field of Artificial Intelligence.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Entering college, I had never coded a day in my life (well aside from one measly static web-page I created at the end of my high school's computers course, as extra credit), and so I wasn't entirely set on my decision to pursue computer science. My uncle was a programmer and he knew that I was feeling lost in regards to choosing a field of study, so he managed to talk me into computer science. I had no idea if that was the right choice for me. Up to that point in my life, the only thing that truly spoke to me was music and art. I have been playing saxophone since I was 13 years old, I was taught how to sketch from my mother, and I love to read and write. I always knew that I never wanted to pursue any of these things as a career, though. As much as I love the arts, I'd much rather keep them as a hobby, and not a chore. I did know that I wanted to incorporate my artistic ability into whatever I did.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+It is for this reason that human-centered computing stood out to me. It sounded like the most "artistic-programmy" thing I could pursue. However, going into college my understanding of computer science was very mistaken. I have learned a great deal about computer science as a whole, since I was a freshman. In particular, I have learned that computer science **is** a form of creativity. On the surface it appears to be someone sitting in front of a desk typing obscure characters into a text box in no coherent order, but once I understood what computer science truly is I realized that my creativity was going to be a part of anything I did with this field. Software engineering is a unique form of creativity. Four years ago I wanted so badly to pursue a concentration in human-centered computing because I wanted to make sure I could find that corner of computer science that allows me to tap into my creative, artistic, side, but through the course of my studies at C.S.U. I came to realize that this field as a whole allows me to do just that, in everything that I do.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+All of this leaves me feeling a bit lost as I leave University. I used to think that I was only going to ever pursue UI/UX design because that sounded fun enough as I was entering college, but now I could see myself going anywhere in this field.  On the other hand, I'm in a place where anything is possible from here. Who knows where I'll end up five, ten, twenty years from today? One thing I am sure of is that I can find a way to make my dreams come true, and this field offers me all the benefits of making that a reality.
