@@ -4,7 +4,7 @@
 
 layout: home
 exceprt: "A personal blog dedicated to documenting my coding journey."
-show_excerpts: true
-paginate: true
-entries_layout: list
+# show_excerpts: true
+# paginate: true
+# entries_layout: list
 ---
