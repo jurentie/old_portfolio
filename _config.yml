@@ -16,8 +16,8 @@
 title: CodeOdyssey
 email: jurentie@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My name is Justin Rentie, and I will use this blog to document my journey
-  as a software developer, and to keep track of things I learn along the way.
+  My name is Justin Rentie, and the purpose of this blog  is to document my journey
+  as a software developer, and keep track of things learned along the way.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jurentie
