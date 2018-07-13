@@ -22,3 +22,5 @@ I spent the past year focused primarily on web development. I developed skills i
 I'm currently focused on cultivating my skills as a back-end software developer using Java as well as Python. I have particular interest in the fields of algorithm's work, artificial intelligence, and blockchain/cryptocurrency. Currently I am focusing on better understanding blockchain and how it applies to crypto as well as other applications such as digital contracts.
 
 It is my hope to soon make a move to Denver, Colorado where I can find solid work as a software developer and to develop further my skills as a programmer. With any luck I can get involved with algorithms, A.I., or crypto.
+
+
