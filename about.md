@@ -4,7 +4,7 @@ title: About Justin Rentie
 permalink: /about/
 ---
 
-![image-center]({{ '/images/justin_rentie_small.png' | absolute_url }}){: .align-center}
+![image-left]({{ '/images/justin_rentie_small.png' | absolute_url }}){: .align-left}
 
 My name is Justin Rentie. I was born in Palisade, Colorado where I lived for the first 17 years of my life. After high school I decided to pursue Computer Science at Colorado State University in Fort Collins, Colorado.
 
