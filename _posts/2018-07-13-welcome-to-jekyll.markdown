@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Introduction I"
+title:  "Introduction Part I: Finding Computer Science"
 date:   2018-07-13 12:43:18 -0600
 categories: personal
 ---
-# Introduction Part 1 : Finding Computer Science #
 My name is Justin Rentie. I have spent the past 4 years studying [Computer Science with a concentration in Human-Centered Computing](https://www.cs.colostate.edu/cstop/csacademics/csdegrees/csbachelors/hccmajor.php){:target="_blank"} from Colorado State University.
 
 > The Computer Science Human-Centered Computing concentration focuses on the design, development, and   implementation of computer interfaces, bringing together techniques from computer science and psychology to evaluate, design, and produce usable interfaces. This program aims to produce an understanding of human psychological abilities and relate them to using computational techniques to develop, implement, and test usable software interface solutions.
