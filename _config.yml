@@ -29,7 +29,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
-remote_theme: "mistakes/so-simple-theme"
+remote_theme: mmistakes/so-simple-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
