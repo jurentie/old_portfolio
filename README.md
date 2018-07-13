@@ -1,2 +1,2 @@
 # CodeOdyssey
-My personal blog. Go to [jurentie.github.io](https://jurentie.github.io)
+My personal blog. Go to [jrcodeodyssey.com(https://jrcodeodyssey.com)
