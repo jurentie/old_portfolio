@@ -5,7 +5,7 @@ date:   2018-07-14 5:00:18 -0600
 categories: personal
 ---
 
-In my [first post](http://jrcodeodyssey.com/personal/2018/07/13/inroduction-pt-1.html) I covered my background and described how I came to study computer science at Colorado State University. Where am I today?
+In my [first post](http://jrcodeodyssey.com/personal/2018/07/13/introduction-pt-1.html) I covered my background and described how I came to study computer science at Colorado State University. Where am I today?
 
 I graduated from C.S.U. in Fort Collins in the spring semester of 2018. When I started college four years ago, I wouldn't have imagined I would actually walk across that stage with a computer science degree in four short years. Having never coded a day in my life before starting at C.S.U., it seemed unlikely to complete my degree on time. I did it, though.
 
