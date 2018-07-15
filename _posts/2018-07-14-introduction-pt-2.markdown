@@ -11,7 +11,7 @@ I graduated from C.S.U. in Fort Collins in the spring semester of 2018. When I s
 
 I am just a few short months out of college and I am still getting a feel for what life is like post-graduation. It feels strange not having any homework assignments to complete, tests to worry about, or classes to register for in the fall. These days I am trying to explore new hobbies and find ways of participating in old hobbies. I am avidly on the search for a new place to play my saxophone, and have a strong desire to take up dance classes.
 
-The real adjustment is jumping in and starting my career. While I have worked several jobs throughout my college career (two of them at once my Fall semester Junior year), I've never worked a single job more than 30 hours a week. I now work full time, 40 hours a week, at the [Open Water Foundation](www.openwaterfoundation.org) located in Fort Collins, Colorado.
+The real adjustment is jumping in and starting my career. While I have worked several jobs throughout my college career (two of them at once my Fall semester Junior year), I've never worked a single job more than 30 hours a week. I now work full time, 40 hours a week, at the [Open Water Foundation](https://www.openwaterfoundation.org) located in Fort Collins, Colorado.
 
 At OWF I have spent the past year as a web development intern, but now I have taken on the role as full time software developer where I have began working on adding code to various Java projects. At OWF we develop tools and visualizations for the aid of processing and understanding water data collected from the state of Colorado. I find this work to be fun and interesting because it allows me to contribute in some way to the environment as well as improve my skills as a software developer.
 
