@@ -5,7 +5,7 @@ date:   2018-07-14 5:00:18 -0600
 categories: personal
 ---
 
-In my [first post](http://jrcodeodyssey.com/personal/2018/07/13/welcome-to-jekyll.html) I covered my background and described how I came to study computer science at Colorado State University. Where am I today?
+In my [first post](http://jrcodeodyssey.com/personal/2018/07/13/inroduction-pt-1.html) I covered my background and described how I came to study computer science at Colorado State University. Where am I today?
 
 I graduated from C.S.U. in Fort Collins in the spring semester of 2018. When I started college four years ago, I wouldn't have imagined I would actually walk across that stage with a computer science degree in four short years. Having never coded a day in my life before starting at C.S.U., it seemed unlikely to complete my degree on time. I did it, though.
 
@@ -17,4 +17,4 @@ At OWF I have spent the past year as a web development intern, but now I have ta
 
 It is my hope to take the skills I learn from work at OWF to propel me into my career as a software developer. Throughout my education, three classes really peaked my interest: Artificial Intelligence, Algorithms, and Systems Security. I would love to find a career working in one of these three fields. Right now a strong interest of mine is crypto-currency and applications of blockchain. I have a strong desire to move to Denver within the next year and find work somewhere in the city, and with any luck I can find work in one of these fields of interest.
 
-For now I will use my time in Fort Collins to improve my skills as a software developer, explore new hobbies and interests, and establish myself as a working adult so that I can have the resources and finances available for my next big move to the city. 
+For now I will use my time in Fort Collins to improve my skills as a software developer, explore new hobbies and interests, and establish myself as a working adult so that I can have the resources and finances available for my next big move to the city.
