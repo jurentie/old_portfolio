@@ -18,7 +18,7 @@ local: en-US
 title: CodeOdyssey
 email: jurentie@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My name is Justin and this is my personal blog, documenting my journey 
+  My name is Justin and this is my personal blog, documenting my journey
   on the quest to become the best software developer I can be.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -51,12 +51,12 @@ author:
     - title: Twitter
       url: https://twitter.com/jurentie
       icon: fab fa-twitter-square
-    - title: Instagram
-      url: https://instagram.com/jurentie
-      icon: fab fa-instagram
     - title: GitHub
       url: https://github.com/jurentie
       icon: fab fa-github-square
+    - title: LinkedIn
+      url: https://www.linkedin.com/in/jurentie
+      icon: fab fa-linkedin
 
 # Footer Links
 footer_links:
