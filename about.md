@@ -23,4 +23,8 @@ I'm currently focused on cultivating my skills as a back-end software developer 
 
 It is my hope to soon make a move to Denver, Colorado where I can find solid work as a software developer and to develop further my skills as a programmer. With any luck I can get involved with algorithms, A.I., or crypto.
 
+# About This Blog
 
+The purpose of this blog is to document the things I've learned either through work or through my own personal work. I hope to use this blog as an opportunity to help myself get better at documenting code and communicating complicated concepts to others. By documenting information I am also ensuring that I have a better understanding, as well. I hope for this blog to mostly focus on Java/Python though I may write the occasional post on topics learned from my time working as a web developer intern, HTML/CSS and JavaScript primarily. I've also been really focusing in on attempting to understand Blockchain/Bitcoin/Ethereum better, and will plan on documenting any information learned in these areas.
+
+By no means am I claiming to be an expert in any of these topics. Most of the information I gather and document will most likely be easily found in other parts of the internet. As I mention above the main focus of this blog is to help myself get better at coding and documenting and to serve as a source to go back to in future. Regardless, I hope this blog can act as a source of information and learning for myself as well as others. Thank you for checking out this blog, I hope you enjoy it as I develop it further.
