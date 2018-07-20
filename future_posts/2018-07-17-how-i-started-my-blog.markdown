@@ -44,7 +44,7 @@ In my opinion it makes since to take the route of creating a user page if hostin
 
 I will be walking through the process of setting up a user page with a jekyll theme throughout this tutorial, but if you'd like to read up on more about GitHub pages including Organization pages and Project Pages please take a look at [GitHub's documentation](https://help.github.com/categories/github-pages-basics/).
 
-# Step 1: Creating a User Page #
+# Step 1: Create a User Page #
 ---
 
 The first step is to set up your own user page from GitHub pages.
