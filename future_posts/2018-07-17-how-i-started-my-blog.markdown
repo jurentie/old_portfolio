@@ -13,7 +13,7 @@ Now that I've covered all the introductory content, I'd like to jump into my fir
  * [GitHub Pages - Background](#github-pages---background)
  * [Step 1: Create a User Page](#step-1-create-a-user-page)
  * [Step 2: Install Ruby](#step-2-install-ruby)
- * Jekyll Themes
+ * [Step 3: Getting Started with Jekyll]
  * Hover Domain Services
 
 # Github Pages - Background #
@@ -59,4 +59,30 @@ Organization Pages sites can be built by any member with push access to the repo
 
 
 # Step 2: Install Ruby #
+---
+
+In order to use Jekyll you will need Ruby and Ruby Gems. Below is how to install Ruby depending on your environment.
+
+### Windows: ###
+When working in a Windows environment I use a terminal emulator [cmder](http://cmder.net/) which runs [git for windows](https://git-scm.com/download/win). With these already in place all you have to do to start using Ruby/Ruby gems is to download and run the Ruby installer found [here](https://rubyinstaller.org/).
+
+### Linux (Ubuntu): ###
+When working in Linux I use the Ubuntu distribution. To install Ruby in Ubuntu run the following from the command line:
+```
+$ sudo apt-get install ruby-full
+```
+For other distro's see [this](https://www.ruby-lang.org/en/documentation/installation/) page.
+
+### Mac: ###
+While I do not work with MacOS the following should be an appropriate way to install Ruby on a Mac.
+First install Homebrew:
+```
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+Install Ruby:
+```
+$ brew install ruby
+```
+
+# Step 3: Getting Started with Jekyll #
 ---
