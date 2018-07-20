@@ -14,8 +14,9 @@ I am currently employed as a full time software developer at [Open Water Foundat
 
 &nbsp; &nbsp;
 
-Example visualizations:
+Example visualizations/sites:
 * [SNODAS Gapminder](http://viz.openwaterfoundation.org/co/owf-viz-co-snodas-gapminder/)
+* [South Platte and Metro Basin Water Entities](http://stories.openwaterfoundation.org/co/swsi-story-sp-entities/)
 
 I spent the past year focused primarily on web development. I developed skills in HTML/CSS as well as JavaScript and have learned a lot while working with the JavaScript library [D3.js](https://d3js.org/).
 
