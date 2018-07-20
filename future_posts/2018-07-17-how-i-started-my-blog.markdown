@@ -14,7 +14,8 @@ Now that I've covered all the introductory content, I'd like to jump into my fir
  * [Step 1: Create a User Page](#step-1-create-a-user-page)
  * [Step 2: Install Ruby](#step-2-install-ruby)
  * [Step 3: Getting Started with Jekyll]
- * Hover Domain Services
+ * [Step 4: Deploy Site to GitHub]
+ * [Step 5 (Optional): Custom Domain using Hover]
 
 # Github Pages - Background #
 ---
