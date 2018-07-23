@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How To Start a Jekyll Themed Blog Using GitHub Pages"
-date:   2018-07-17 11:26:00 -0600
+date:   2018-07-23 19:00:00 -0600
 categories:
   - ruby
   - jekyll
