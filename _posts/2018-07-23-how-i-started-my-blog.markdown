@@ -214,6 +214,7 @@ After you have purchased your domain on Hover, and verified your email, go to *Y
  * **Hostname**: www, **Record Type**: CNAME, **Value**: http://username.github.io/
 
 ![image-center]({{ '/images/hover-domains.PNG' | absolute_url }}){: .align-center}
+
 {:start="3"}
 3. Add a file `CNAME` in the root of your repository `username.github.io`. Only write one line to this file: `http://yournewdomain.com`.
 
