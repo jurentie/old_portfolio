@@ -208,7 +208,7 @@ After you have purchased your domain on Hover, and verified your email, go to *Y
  * **Hostname**: @, **Record Type**: A, **Value**: 192.30.252.154
  * **Hostname**: www, **Record Type**: CNAME, **Value**: http://username.github.io
  * **Hostname**: www, **Record Type**: CNAME, **Value**: http://username.github.io/
-![image-center]({{ '/images/ruby-install.png' | absolute_url }}){: .align-center}
+![image-center]({{ '/images/hover-domains.PNG' | absolute_url }}){: .align-center}
 
 3. Add a file `CNAME` in the root of your repository `username.github.io`. Only write one line `http://yournewdomain.com`.
 
