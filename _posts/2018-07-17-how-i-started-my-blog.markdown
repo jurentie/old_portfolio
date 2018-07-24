@@ -16,7 +16,7 @@ Now that I've covered all the introductory content, I'd like to jump into my fir
  * [Step 3: Getting Started with Jekyll](#step-3-getting-started-with-jekyll)
  * [Step 4: Customize Your Site](#step-4-customize-your-site)
  * [Step 5: Deploy Site to GitHub](#step-5-deploy-site-to-github)
- * [Step 6 (Optional): Custom Domain using Hover](#step-6-custom-domain-using-hover)
+ * [Step 6 (Optional): Custom Domain using Hover](#step-6-optional-custom-domain-using-hover)
  * [Wrapping Up](#wrapping-up)
  * [Sources](#sources)
 
