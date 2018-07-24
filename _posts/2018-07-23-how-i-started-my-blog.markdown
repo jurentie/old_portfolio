@@ -55,7 +55,7 @@ The first step is to set up your own user page from GitHub pages.
 
 This blog is set up as a user page. Files for a user page must reside in the `master` branch of the site's repository. Naming of the repository must follow the convention with the GitHub account name: `<username>.github.io`
 
-After adding the necessary files to the repository for the static site you will be able to view your static site at the following domain: `http(s)://<username>.github.io`
+After adding the necessary files to the repository for the static site you will be able to view your static site at the following domain: `http(s)://<username>.github.io`. We will be adding files later on using Jekyll.
 
 *User Pages sites can be built by any user account with a verified email address. They can also use deploy keys to automate the process.*
 
@@ -66,13 +66,13 @@ After adding the necessary files to the repository for the static site you will 
 In order to use Jekyll you will need Ruby and Ruby Gems. Below is how to install Ruby depending on your environment.
 
 ### Windows: ###
-When working in a Windows environment I use a terminal emulator [cmder](http://cmder.net/) which runs [git for windows](https://git-scm.com/downloads). With these already in place all you have to do to start using Ruby/Ruby gems is to download and run the Ruby installer found [here](https://rubyinstaller.org/).
+When working in a Windows environment I use a terminal emulator [cmder](http://cmder.net/) which runs [git for windows](https://git-scm.com/downloads). With these already in place all you have to do to begin using Ruby/Ruby gems is download and run the Ruby installer found [here](https://rubyinstaller.org/).
 
 During installation you should select `Add Ruby executables to your PATH` or else you will have to manually edit `PATH`.
 
 ![image-center]({{ '/images/ruby-install.png' | absolute_url }}){: .align-center}
 
-To edit your `PATH` in Windows 10 search "Edit the system environment variables" > Select that tab *Advanced* from the *System Properties* window > Click on *Environment Variables...* > Under *System variables* select *`PATH`* > Click *Edit* > Click *New* and add the path to where Ruby was installed ex: `C:\Ruby24-x64\bin`.
+To edit your `PATH` in Windows 10 search "Edit the system environment variables" > Select the tab *Advanced* from the *System Properties* window > Click on *Environment Variables...* > Under *System variables* select *`PATH`* > Click *Edit* > Click *New* and add the path to where Ruby was installed ex: `C:\Ruby24-x64\bin`.
 
 After following the above instructions you should be able to open a terminal and run ruby.  
 Check by running the command `$ ruby -v` to see the version.
@@ -82,7 +82,7 @@ I like to work in the Ubuntu distribution of Linux. To install Ruby in Ubuntu ru
 ```
 $ sudo apt-get install ruby-full
 ```
-For other distro's see [this](https://www.ruby-lang.org/en/documentation/installation/) page.
+For other distro installation's see [this](https://www.ruby-lang.org/en/documentation/installation/) page.
 
 After following the above instructions you should be able to open a terminal and run ruby.  
 Check by running the command `$ ruby -v` to see the version.
@@ -108,20 +108,21 @@ Install [Jekyll](https://jekyllrb.com/) and [Bundler](https://bundler.io/) using
 $ gem install jekyll bundler
 ```
 
-Create a new directory using Jekyll/Bundler. We will call this directory `blog`.
-```
-$ jekyll new blog
-```
-
 You can check to see if Jekyll and Bundler properly installed by running
 ```
 $ jekyll -v && bundler -v
 ```
 
+Create a new directory using Jekyll/Bundler. We will call this directory `blog`.
+```
+$ jekyll new blog
+```
+
+
 `cd` into your new `blog` directory and you should see the following:
 ```
 ├── temp
-|   ├── _posts/
+|   ├── _posts/ ---------------------------------------- This folder is where your posts live.
 |   |   ├── yyyy-mm-dd-welcome-to-jekyll.markdown ------ Sample post with some introductory instruction.
 |   ├── .gitignore ------------------------------------- Standard git .gitignore file.
 |   ├── 404.html --------------------------------------- Error page.
@@ -136,7 +137,7 @@ $ jekyll -v && bundler -v
 ---
 From here you can customize the page however you'd like.
 
-*I am still learning how to fully customize all the features of my own blog, but there are many resources online for full page customization, to meet your hearts desires.*
+*I am still learning how to fully customize all the features of my own blog, but there are many resources online for full page customization, to meet your heart's desires.*
 
 ### Adding a Custom Theme ###
 
@@ -146,7 +147,7 @@ Previously GitHub only supported builds of about a dozen Jekyll themes, but star
 
 I decided to go with the theme [so-simple](https://github.com/mmistakes/so-simple-theme) by [mmistakes](https://github.com/mmistakes).
 
-First, in your `Gemfile` replace the line `gem "jekyll", "~> 3.8.3"` with `gem "github-pages", group: :jekyll_plugins`. *Pay attention to the colons here, this tripped me up the first time through.*
+To get started, in your `Gemfile` replace the line `gem "jekyll", "~> 3.8.3"` with `gem "github-pages", group: :jekyll_plugins`. *Pay attention to the colons here, this tripped me up the first time through.*
 
 Run `bundle update` to verify that all gems are installed properly.
 
@@ -157,13 +158,13 @@ From here you can have some fun playing around with the `_config.yml` file.
 ### Header/Footer ###
 To add custom header information such as meta tags and adding a favicon create a folder `_includes` with a file called `head-custom.html` with the header code.
 
-I have yet to test it, but I'm sure the same applies to a footer.
+I have yet to test it, but I'm sure the same applies to footer information.
 
 ### About Page ###
 Editing your about page is as simple as editing the markdown in the file `about.md`.
 
 ### Posting ###
-You can go to the file `yyyy-mm-dd-welcome-to-jekyll.markdown` and edit the content to create your first post. Follow this same template for creating new files under the folder `_posts` to create new posts.
+You can go to the file `yyyy-mm-dd-welcome-to-jekyll.markdown` and edit the content to create your first post. Follow this same template for creating new files under the folder `_posts`.
 
 # Step 5: Deploy Site to GitHub #
 ---
@@ -197,7 +198,7 @@ You can now see your blog at `http://username.github.io`
 # Step 6 (Optional): Custom Domain Using Hover #
 ---
 
-Head to [Hover](https://www.hover.com/) to purchase a domain name. You can use any domain service provider you'd prefer, but I only know how to set up your custom domain on GitHub through Hover.
+Head to [Hover](https://www.hover.com/) to purchase a domain name. You can use any domain service provider you'd prefer, but this tutorial will walk through setting up a custom domain using Hover.
 
 I discovered Hover through the podcast from [CodeNewbie](https://www.codenewbie.org/). Through CodeNewbie you can get a 10% discount when using promo-code `NEWBIE`. I strongly encourage checking out their podcast, especially for junior programmers, either in school or just getting started in their career.
 
@@ -213,18 +214,18 @@ After you have purchased your domain on Hover, and verified your email, go to *Y
  * **Hostname**: www, **Record Type**: CNAME, **Value**: http://username.github.io/
 
 ![image-center]({{ '/images/hover-domains.PNG' | absolute_url }}){: .align-center}
+{:start="3"}
+3. Add a file `CNAME` in the root of your repository `username.github.io`. Only write one line to this file: `http://yournewdomain.com`.
 
-3. Add a file `CNAME` in the root of your repository `username.github.io`. Only write one line `http://yournewdomain.com`.
-
-This should now connect your custom Hover domain name to your new blog hosted on GitHub pages.
+This should now connect your custom Hover domain name to your new blog hosted on GitHub pages. Be patient, it may take up to 10 minutes to take effect.
 
 # Wrapping Up #
 ---
-There you have it. This is the process I took in getting my own personal blog up and running. You may notice that this post is considerably long and detailed and I've tried to think of everyone's different scenarios.
+There you have it. This is the process I took in getting my own personal blog up and running. I hope I've provided enough detail here for beginners and advanced programmers alike.
 
-What I tend to find online is either a small piece of the puzzle or [vague (yet menacing)](http://nightvale.wikia.com/wiki/Vague,_Yet_Menacing,_Government_Agency) instructions on how to complete something. I hope that in my posts I can break it down enough that even a beginner (as I am) could understand how to get something accomplished. Perhaps I offer too much detail, and I apologize if I offer too little, but I've tried to be as thorough as I can.
+What I tend to find online is either a small piece of the puzzle or [vague (yet menacing)](http://nightvale.wikia.com/wiki/Vague,_Yet_Menacing,_Government_Agency) instructions on how to complete something. I hope that in my posts I can break it down enough that even a beginner (as I am) could understand how to get something accomplished. If you are a more advanced developer I hope you are able to pick out the pieces necessary for you.
 
-As I've written about in [About This Blog](http://jrcodeodyssey.com/administrative/2018/07/16/about-this-blog.html) I am not an expert and most of the information documented here has been compiled from several different sources I found online while trying to get my blog running myself. To look into more details or to find the original content please see the sources below.
+As I've written in [About This Blog](http://jrcodeodyssey.com/administrative/2018/07/16/about-this-blog.html) I am not an expert and most of the information documented here has been compiled from several different sources I found online while trying to get my blog running myself. To look into more details or to find the original content please see the sources below.
 
 And hey, Thanks.
 
@@ -239,3 +240,6 @@ And hey, Thanks.
 * [GitHub Pages](https://help.github.com/categories/github-pages-basics/)
 * [Ruby](https://www.ruby-lang.org/en/downloads/)
 * [Bundler](https://bundler.io/)
+
+### Something Fun to Checkout ###
+* [Welcome to Night Vale Podcast](http://www.welcometonightvale.com/)
