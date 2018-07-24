@@ -23,7 +23,7 @@ Now that I've covered all the introductory content, I'd like to jump into my fir
 # Github Pages - Background #
 ---
 
-GitHub pages is an excellent platform for hosting static websites and comes free of charge as a service provided by GitHub. I used GitHub user pages to host and deploy my personal Jekyll themed blog. GitHub pages promotes using Jekyll themes to host your static sites, but allows hosting any static site files including HTML/CSS/JavaScript.
+GitHub pages is an excellent platform for hosting static websites and comes free of charge as a service provided through GitHub. I used GitHub user pages to host and deploy my personal Jekyll themed blog. GitHub pages promotes using Jekyll themes to host your static sites, but allows hosting any static site files including HTML/CSS/JavaScript.
 
 GitHub Pages is a static site hosting service and doesn't support server-side code such as, PHP, Ruby, or Python.
 
@@ -33,7 +33,7 @@ Since GitHub pages is not designed to host large, non-static sites the following
 
  * GitHub Pages source repositories have a recommended limit of 1GB
  * Published GitHub Pages sites may be no larger than 1GB
- * GitHub Pages sites have a *soft* bandwidth limit of 100BG/mo.
+ * GitHub Pages sites have a *soft* bandwidth limit of 100GB/mo.
  * GitHub Pages sites have a *soft* limit of 10 builds/hr.
 
 ### User, Organization, and Project Pages ###
@@ -46,7 +46,7 @@ In my opinion it makes since to take the route of creating a user page if hostin
 
 *Note that each user is allowed **one** user page.*
 
-I will be walking through the process of setting up a user page with a jekyll theme throughout this tutorial, but if you'd like to read up on more about GitHub pages including Organization pages and Project Pages please take a look at [GitHub's documentation](https://help.github.com/categories/github-pages-basics/).
+I will be walking through the process of setting up a user page with a jekyll theme throughout this tutorial, but if you'd like to read up on GitHub pages, including Organization pages and Project Pages, please take a look at [GitHub's documentation](https://help.github.com/categories/github-pages-basics/).
 
 # Step 1: Create a User Page #
 ---
@@ -55,11 +55,9 @@ The first step is to set up your own user page from GitHub pages.
 
 This blog is set up as a user page. Files for a user page must reside in the `master` branch of the site's repository. Naming of the repository must follow the convention with the GitHub account name: `<username>.github.io`
 
-After adding the necessary files to the repository for the static site you will be able to view your static site at the following domain: `http(s):<username/orgname>.github.io`
+After adding the necessary files to the repository for the static site you will be able to view your static site at the following domain: `http(s)://<username>.github.io`
 
-User Pages sites can be built by any user account with a verified email address. They can also use deploy keys to automate the process.
-
-Organization Pages sites can be built by any member with push access to the repository and a verified email address
+*User Pages sites can be built by any user account with a verified email address. They can also use deploy keys to automate the process.*
 
 
 # Step 2: Install Ruby #
@@ -68,19 +66,19 @@ Organization Pages sites can be built by any member with push access to the repo
 In order to use Jekyll you will need Ruby and Ruby Gems. Below is how to install Ruby depending on your environment.
 
 ### Windows: ###
-When working in a Windows environment I use a terminal emulator [cmder](http://cmder.net/) which runs [git for windows](https://git-scm.com/download/win). With these already in place all you have to do to start using Ruby/Ruby gems is to download and run the Ruby installer found [here](https://rubyinstaller.org/).
+When working in a Windows environment I use a terminal emulator [cmder](http://cmder.net/) which runs [git for windows](https://git-scm.com/downloads). With these already in place all you have to do to start using Ruby/Ruby gems is to download and run the Ruby installer found [here](https://rubyinstaller.org/).
 
 During installation you should select `Add Ruby executables to your PATH` or else you will have to manually edit `PATH`.
 
 ![image-center]({{ '/images/ruby-install.png' | absolute_url }}){: .align-center}
 
-To edit your `PATH` in Windows 10 search "Edit the system environment variables > Select *Advanced* from *System Properties* > Click on *Environment Variables...* > Under *System variables* select *`PATH`* > Click *Edit* > Click *New* and add the path to where Ruby was installed ex: `C:\Ruby24-x64\bin`.
+To edit your `PATH` in Windows 10 search "Edit the system environment variables" > Select that tab *Advanced* from the *System Properties* window > Click on *Environment Variables...* > Under *System variables* select *`PATH`* > Click *Edit* > Click *New* and add the path to where Ruby was installed ex: `C:\Ruby24-x64\bin`.
 
 After following the above instructions you should be able to open a terminal and run ruby.  
 Check by running the command `$ ruby -v` to see the version.
 
 ### Linux (Ubuntu): ###
-When working in Linux I use the Ubuntu distribution. To install Ruby in Ubuntu run the following from the command line:
+I like to work in the Ubuntu distribution of Linux. To install Ruby in Ubuntu run the following from the command line:
 ```
 $ sudo apt-get install ruby-full
 ```
@@ -113,6 +111,11 @@ $ gem install jekyll bundler
 Create a new directory using Jekyll/Bundler. We will call this directory `blog`.
 ```
 $ jekyll new blog
+```
+
+You can check to see if Jekyll and Bundler properly installed by running
+```
+$ jekyll -v && bundler -v
 ```
 
 `cd` into your new `blog` directory and you should see the following:
@@ -208,7 +211,7 @@ After you have purchased your domain on Hover, and verified your email, go to *Y
  * **Hostname**: @, **Record Type**: A, **Value**: 192.30.252.154
  * **Hostname**: www, **Record Type**: CNAME, **Value**: http://username.github.io
  * **Hostname**: www, **Record Type**: CNAME, **Value**: http://username.github.io/
- 
+
 ![image-center]({{ '/images/hover-domains.PNG' | absolute_url }}){: .align-center}
 
 3. Add a file `CNAME` in the root of your repository `username.github.io`. Only write one line `http://yournewdomain.com`.
