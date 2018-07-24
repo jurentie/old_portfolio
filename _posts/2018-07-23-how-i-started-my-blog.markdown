@@ -223,9 +223,9 @@ This should now connect your custom Hover domain name to your new blog hosted on
 ---
 There you have it. This is the process I took in getting my own personal blog up and running. I hope I've provided enough detail here for beginners and advanced programmers alike.
 
-What I tend to find online is either a small piece of the puzzle or [vague (yet menacing)](http://nightvale.wikia.com/wiki/Vague,_Yet_Menacing,_Government_Agency) instructions on how to complete something. I hope that in my posts I can break it down enough that even a beginner (as I am) could understand how to get something accomplished. If you are a more advanced developer I hope you are able to pick out the pieces necessary for you.
+What I tend to find online is either a small piece of the puzzle or [vague (yet menacing)](http://nightvale.wikia.com/wiki/Vague,_Yet_Menacing,_Government_Agency) instructions on how to complete the task at hand. I hope that in my posts I can break it down enough that even a beginner (as I am) could understand how to get something accomplished. If you are a more advanced developer I hope you are able to pick out the pieces necessary for you.
 
-As I've written in [About This Blog](http://jrcodeodyssey.com/administrative/2018/07/16/about-this-blog.html) I am not an expert and most of the information documented here has been compiled from several different sources I found online while trying to get my blog running myself. To look into more details or to find the original content please see the sources below.
+As I've written in [About This Blog](http://jrcodeodyssey.com/administrative/2018/07/16/about-this-blog.html) I am not an expert and most of the information documented here has been compiled from several different sources, that I've found online while trying to get my blog running myself. To look into more details or to find the original content please see the sources below.
 
 And hey, Thanks.
 
@@ -241,5 +241,5 @@ And hey, Thanks.
 * [Ruby](https://www.ruby-lang.org/en/downloads/)
 * [Bundler](https://bundler.io/)
 
-### Something Fun to Checkout ###
+### Something Fun to Check Out ###
 * [Welcome to Night Vale Podcast](http://www.welcometonightvale.com/)
