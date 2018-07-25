@@ -1,8 +1,14 @@
 ---
 layout: page
-title: About Justin Rentie
+title: About
 permalink: /about/
 ---
+
+* [About Justin Rentie](#about-justin-rentie)
+    * [Online Resume](/resume/)
+* [About This Blog](#about-this-blog)
+
+# About Justin Rentie #
 
 ![image-left]({{ '/images/justin_rentie_small.png' | absolute_url }}){: .align-left}
 
@@ -24,7 +30,9 @@ I'm currently focused on cultivating my skills as a back-end software developer 
 
 It is my hope to soon make a move to Denver, Colorado where I can find solid work as a software developer and to develop further my skills as a programmer. With any luck I can get involved with algorithms, A.I., or crypto.
 
-# About This Blog
+### See [Online Resume](/resume/) ###
+
+# About This Blog #
 
 The purpose of this blog is to document the things I've learned either through work or through my own personal projects. I am using this blog as an opportunity to help myself get better at documenting code and communicating complicated concepts to others. By documenting information I am also ensuring that I have a better understanding. This blog will mostly focus on Java/Python, though I may write the occasional post on topics learned from my time working as a web developer intern, HTML/CSS and JavaScript primarily. I've also been working to better understand Blockchain/Bitcoin/Ethereum, and plan on documenting any information learned in these areas.
 
