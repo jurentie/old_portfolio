@@ -4,6 +4,7 @@ title: Online Résumé
 permalink: /resume/
 ---
 # Justin Rentie #
+---
 305 Mae Street | Fort Collins, CO | 80525  
 [jurentie@gmail.com](jurentie@gmail.com)  
 [LinkedIn](https://www.linkedin.com/in/jurentie) | [GitHub](https://github.com/jurentie) | [Twitter](https://twitter.com/JustinRentie)
@@ -11,6 +12,7 @@ permalink: /resume/
 **Objective**: Seeking an entry level position in an exciting and fast paced software company where I can contribute and develop my coding or quality assurance skills.
 
 #### Skills: ####  
+---
 ***Programming Languages***: Java, C, C++, Python, HTML, CSS, JavaScript, and MySQL  
 ***Operating Systems***: Windows, Linux
 * Strong customer service skills learned from previous employment
@@ -21,12 +23,14 @@ permalink: /resume/
 * Willing to independently seek out information for solutions to problems
 
 #### Education: ####  
+---
 [Colorado State University, Fort Collins, CO](https://www.colostate.edu/)  
 [Bachelor of Science, Computer Science/Concentration: Human-Centered Computing ](https://www.cs.colostate.edu/cstop/csacademics/csdegrees/csbachelors/hccmajor.php)  
 GPA: 3.232  
 Graduation: Spring 2018
 
 #### Related Employment: ####  
+---
 [*Open Water Foundation*](http://openwaterfoundation.org/), May 2018 - Present  
 ***Full Time Software Developer***:   
 * Worked in Java and Python.
@@ -48,15 +52,18 @@ Graduation: Spring 2018
 * Developed skills in working with team members as related to a job
 
 #### Class Programming Projects: ####
+---
 * Created a program over the course of 9 weeks that uses several different methods to compare image files, including creating a perceptron, and cluster them into specified number of clusters in C++.
 * Wrote several programs in Java that created and parsed through certain data structures such as trees, graphs, hash tables, linked lists, as well as stacks and queues.
 * All programs are independent works where I performed all coding, testing, and debugging.
 
 #### Past-Employment: ####
+---
 *Cinemark XD, Movie and Bistro, Fort Collins, CO*, May - November 2016  
 ***Usher*** (Worked 10 - 15 hours a week)
 
 #### Engagement: ####
+---
 *Colorado State University Band, Fort Collins, CO*, August 2013 - May 2018  
 * Member Presidential Pep Band, Marching Band and Basketball Pep Band practicing 15-20 hours per week for performances
 * Two years of Colorado State Universities Concert Band practicing 6 hours per week
