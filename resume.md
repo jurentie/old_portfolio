@@ -6,7 +6,7 @@ permalink: /resume/
 # Justin Rentie #
 305 Mae Street | Fort Collins, CO | 80525  
 [jurentie@gmail.com](jurentie@gmail.com)  
-[LinkedIn](https://www.linkedin.com/in/jurentie) | [GitHub](https://github.com/jurentie) | [Twitter](https://twitter.com/jurentie)
+[LinkedIn](https://www.linkedin.com/in/jurentie) | [GitHub](https://github.com/jurentie) | [Twitter](https://twitter.com/JustinRentie)
 
 **Objective**: Seeking an entry level position in an exciting and fast paced software company where I can contribute and develop my coding or quality assurance skills.
 
