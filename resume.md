@@ -64,6 +64,6 @@ Graduation: Spring 2018
 
 ### Engagement: ###
 ---
-*Colorado State University Band, Fort Collins, CO*, August 2013 - May 2018  
+[*Colorado State University Band, Fort Collins, CO*](https://music.colostate.edu/bands/), August 2013 - May 2018  
 * Member Presidential Pep Band, Marching Band and Basketball Pep Band practicing 15-20 hours per week for performances
 * Two years of Colorado State Universities Concert Band practicing 6 hours per week
