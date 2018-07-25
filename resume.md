@@ -19,7 +19,7 @@ permalink: /resume/
 **Education**:  
 [Colorado State University, Fort Collins, CO](https://www.colostate.edu/)  
 [Bachelor of Science, Computer Science/Concentration: Human-Centered Computing ](https://www.cs.colostate.edu/cstop/csacademics/csdegrees/csbachelors/hccmajor.php)  
-GPA: 3.07  
+GPA: 3.232  
 Graduation: Spring 2018
 
 **Related Employment**:  
