@@ -5,7 +5,7 @@ permalink: /resume/
 ---
 # Justin Rentie #
 ---
-305 Mae Street | Fort Collins, CO | 80525  
+356 Plowman Way | Fort Collins, Colorado | 80526  
 [jurentie@gmail.com](mailto:jurentie@gmail.com)  
 [LinkedIn](https://www.linkedin.com/in/jurentie) | [GitHub](https://github.com/jurentie) | [Twitter](https://twitter.com/JustinRentie)
 
