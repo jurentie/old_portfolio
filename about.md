@@ -9,7 +9,7 @@ permalink: /about/
 * [About This Blog](#about-this-blog)
 
 # About Justin Rentie #
-
+---
 ![image-left]({{ '/images/justin_rentie_small.png' | absolute_url }}){: .align-left}
 
 My name is Justin Rentie. I was born in Palisade, Colorado where I lived for the first 17 years of my life. After high school I decided to pursue Computer Science at Colorado State University in Fort Collins, Colorado.
@@ -33,7 +33,7 @@ It is my hope to soon make a move to Denver, Colorado where I can find solid wor
 ### See [Online Resume](/resume/) ###
 
 # About This Blog #
-
+---
 The purpose of this blog is to document the things I've learned either through work or through my own personal projects. I am using this blog as an opportunity to help myself get better at documenting code and communicating complicated concepts to others. By documenting information I am also ensuring that I have a better understanding. This blog will mostly focus on Java/Python, though I may write the occasional post on topics learned from my time working as a web developer intern, HTML/CSS and JavaScript primarily. I've also been working to better understand Blockchain/Bitcoin/Ethereum, and plan on documenting any information learned in these areas.
 
 *By no means am I claiming to be an expert in any of these topics*.
