@@ -23,12 +23,12 @@ GPA: 3.232
 Graduation: Spring 2018
 
 **Related Employment**:  
-Open Water Foundation, May 2018 - Present  
+[Open Water Foundation](http://openwaterfoundation.org/), May 2018 - Present  
 ***Full Time Software Developer***:   
 * Worked in Java and Python.
-* Contributed to software that allows processing of water data, including TSTool and StateDMI.
+* Contributed to software that allows processing of water data, including [TSTool](https://www.colorado.gov/pacific/cdss/tstool) and [StateDMI](https://www.colorado.gov/pacific/cdss/statedmi).
 
-Open Water Foundation, April 2017-May 2018  
+[Open Water Foundation](http://openwaterfoundation.org/), April 2017-May 2018  
 ***Intern***:
 * Worked 30 hours per week over the summer and 13 hours per week during school year.
 * Working on HTML/CSS/JavaScript to create web visualizations that enable those who make decisions about water to better understand water data.
