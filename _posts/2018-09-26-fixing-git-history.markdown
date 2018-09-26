@@ -5,11 +5,13 @@ date:   2018-09-26 1:00:00 -0600
 categories: Git
 ---
 
-In adding to StateDMI and pushing commits to cdss-app-statedmi-main an issue as arisen where all of the lines in StateDMI_Processor.java were committed as having been changed. This is most likely an issue stemming from Windows line endings versus Unix line endings. Regardless of what caused the issue it would be nice to go back in history and revise the commit to reflect the lines actually edited. This documentation walks through how to do that.
+Recently I have run into an issue at work where a single file in the commit history was showing that I had changed all the lines in the file, which was not true. This is most likely due to confusion between Unix line endings and Windows line endings. This is an issue that keeps arising for me and I plan on doing more research into this and may write a future post on this as well. There was also a very confusion merge history when I accidentally merged the wrong branch, so the network chart on GitHub's website was extremely confusing to understand.
+
+I decided that the history needed to be amended to more clearly understand the recent changes. Fixing git history is a fairly complicated process, and can be done multiple ways by either using `git reset` or `git rebase`. The best solution I found to my particular problem, was through using `git reset`.
 
 ## Understanding the Issue
 
- For simplicity sake this documentation follows an example based off a test repository. Below is an example of two separate branches having been merged with master with the `--no-ff` flag to insure no fast-forward. By doing this, GitHub's network chart can reflect commits that happened in a separate branch and then were merged with master by being displayed on a separate line that is either green or blue. The key is to make amends to the history, while still getting this behavior when checking the network chart.
+ For simplicity sake this post follows an example based off a test repository. Below is an example of two separate branches having been merged with master with the `--no-ff` flag to insure no fast-forward. By doing this, GitHub's network chart can reflect commits that happened in a separate branch and then were merged with master by being displayed on a separate line that is either green or blue. The key is to make amends to the history, while still getting this behavior when checking the network chart.
 
  Below is an example of the second branch merged with master having an issue in one of the commits.
 
