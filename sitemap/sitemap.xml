@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://jrcodeodyssey.com/</loc>
+  <lastmod>2018-07-30T18:37:09+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://jrcodeodyssey.com/posts/</loc>
+  <lastmod>2018-07-30T18:37:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jrcodeodyssey.com/categories/</loc>
+  <lastmod>2018-07-30T18:37:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jrcodeodyssey.com/about/</loc>
+  <lastmod>2018-07-30T18:37:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jrcodeodyssey.com/ruby/jekyll/github%20pages/2018/07/23/how-i-started-my-blog.html</loc>
+  <lastmod>2018-07-30T18:37:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jrcodeodyssey.com/administrative/2018/07/16/about-this-blog.html</loc>
+  <lastmod>2018-07-30T18:37:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jrcodeodyssey.com/personal/2018/07/14/introduction-pt-2.html</loc>
+  <lastmod>2018-07-30T18:37:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jrcodeodyssey.com/personal/2018/07/13/introduction-pt-1.html</loc>
+  <lastmod>2018-07-30T18:37:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://jrcodeodyssey.com/resume/</loc>
+  <lastmod>2018-07-30T18:37:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
