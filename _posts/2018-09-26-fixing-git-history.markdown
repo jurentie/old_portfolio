@@ -5,6 +5,8 @@ date:   2018-09-26 1:00:00 -0600
 categories: Git
 ---
 
+This post outlines a possible route for revising history in git and on GitHub.
+
 Recently I have run into an issue at work where a single file in the commit history was showing that I had changed all the lines in the file, which was not true. This is most likely due to confusion between Unix line endings and Windows line endings. This is an issue that keeps arising for me and I plan on doing more research into this and may write a future post on this as well. There was also a very confusion merge history when I accidentally merged the wrong branch, so the network chart on GitHub's website was extremely confusing to understand.
 
 I decided that the history needed to be amended to more clearly understand the recent changes. Fixing git history is a fairly complicated process, and can be done multiple ways by either using `git reset` or `git rebase`. The best solution I found to my particular problem, was through using `git reset`.
