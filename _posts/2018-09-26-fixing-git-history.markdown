@@ -84,6 +84,6 @@ This should now show the revised history on GitHub, as can be seen below:
 
 ![Fixed History](https://github.com/jurentie/pictures/blob/master/pictures/fixed-history.png?raw=true)
 
-Again, there are probably many different ways to achieve the same results. While I have been working with GitHub for about 3 years now, there is still much for me to learn. If you have a better method of doing this same process, please feel free to [email me](jurentie@gmail.com), and I will update this post as necessary.
+Again, there are probably many different ways to achieve the same results. While I have been working with GitHub for about 3 years now, there is still much for me to learn. If you have a better method of doing this same process, please feel free to [email me](mailto:jurentie@gmail.com), and I will update this post as necessary.
 
 I hope this helps someone fix their mistakes using git. Thanks for reading.
