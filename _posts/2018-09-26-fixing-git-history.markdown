@@ -7,13 +7,15 @@ categories: Git
 
 This post outlines a possible route for revising history in git and on GitHub.
 
-Recently I have run into an issue at work where a single file in the commit history was showing that I had changed all the lines in the file, which was not true. This is most likely due to confusion between Unix line endings and Windows line endings. This is an issue that keeps arising for me and I plan on doing more research into this and may write a future post on this as well. There was also a very confusion merge history when I accidentally merged the wrong branch, so the network chart on GitHub's website was extremely confusing to understand.
+Recently I have run into an issue at work where a single file in the commit history was showing that I had changed all the lines in a file, which was not true. This is most likely due to confusion between Unix line endings and Windows line endings. (This is an issue that keeps arising for me and I plan on doing more research into this and may write a future post on this as well.) There was also a very confusing merge history when I accidentally merged the wrong branch, so the network chart on GitHub's website was extremely confusing to understand.
 
-I decided that the history needed to be amended to more clearly understand the recent changes. Fixing git history is a fairly complicated process, and can be done multiple ways by either using `git reset` or `git rebase`. The best solution I found to my particular problem, was through using `git reset`.
+I decided that the history needed to be amended given that it is the intent to make this code open source and someone could go back to this history one day.
+
+Fixing git history is a fairly complicated process, and can be done multiple ways by either using `git reset` or `git rebase`. The best solution I found to my particular problem, was through using `git reset`.
 
 ## Understanding the Issue
 
- For simplicity sake this post follows an example based off a [test repository](https://github.com/jurentie/temp-test-history) which you could clone and edit to follow along. This process is very easy to mess up, and could be detrimental to large projects. I highly encourage testing this process before making any changes on any important content.
+ For simplicity sake this post follows an example based off a [test repository](https://github.com/jurentie/temp-test-history) which you could clone and edit to follow along. This process is very easy to mess up, and could be detrimental to large projects. *I highly encourage testing this process before making any changes on any important content.*
 
  Below is an example of two separate branches having been merged with master with the `--no-ff` flag to insure no fast-forward. By doing this, GitHub's network chart can reflect commits that happened in a separate branch and then were merged with master by being displayed on a separate line that is either green or blue. The key is to make amends to the history, while still getting this behavior when checking the network chart.
 
@@ -25,18 +27,18 @@ I decided that the history needed to be amended to more clearly understand the r
 
 ## Step 1: Copy Current State of repository
 
-In order to fix the history but retain the edits made up to this point, it is best to clone the repository to a safe back up location. This will be helpful in returning the repository to its current state without the issues present. It might be best to create a backup and save it to a USB, CD, or other external device. It is also possible to simply copy the repository to a separate folder located elsewhere on a local machine. The decision of how securely to back up the repository will depend on how important it is to have a backup of the data.
+In order to fix the history but retain the edits made up to this point, it is best to clone the repository to a safe back up location. This will be helpful in returning the repository to its current state after fixing any issues, which is outlined later in this post. It might be best to create a backup and save it to a USB, CD, or other external device. It is also possible to copy the repository to a separate folder located elsewhere on a local machine, to be extra cautious. The decision of how securely to back up the repository will depend on how important it is to have a backup of the data.
 
 ## Step 2: Reset history
 
-Once the current state of the repository is sufficiently backed up, it is safe to reset the history in the repository back to the merge before the commit with an issue. There may be more efficient ways of editing the exact commit with problems, but this is the best solution I have managed to find.
+Once the current state of the repository is sufficiently backed up, it is safe to being making changes to history. I decided it was best to reset the history in the repository back to the merge before the commit with an issue. There may be more efficient ways of editing the exact commit with problems, but this is the best solution I have managed to find.
 
 Before Reset:
 ![Merge Before Issue](https://github.com/jurentie/pictures/blob/master/pictures/previous-merge.png?raw=true)
 
 &nbsp; &nbsp;
 
-In the example above, the previous merge before these commits is the commit with the hash `4a3e0c3`. This is where to reset history to. To do this use the following command:
+In the example above, the previous merge before these commits is the commit with the hash `4a3e0c3`. This is where I want to reset the history to. To do this use the following command:
 
 `$ git reset --hard 4a3e0c3`
 
@@ -49,7 +51,7 @@ After Reset:
 
 ## Step 3: Fix Mistakes
 
-Now that the branch is set back to history before there were any issues, it is possible to fix the mistakes. In order to still reflect that these changes were made in a separate branch, first create a new branch.
+Now that the branch is set back to the history before there were any issues, we will now fix the mistakes. In order to still reflect that these changes were made in a separate branch, first create a new branch.
 
 `$ git checkout -b {newBranchName}`
 
@@ -61,7 +63,7 @@ To do this in a way that preserves the order of the commits and ensures the same
 
 This will produce a log of all the commits in history and `--stat` will specify exactly which files were edited in each commit.
 
-![Git Log Stat](../images/git-log-stat.png)
+![Git Log Stat]({{ '/images/git-log-stat.png' | absolute_url }})
 
 **Tip**: `:q` to exit the log.
 
