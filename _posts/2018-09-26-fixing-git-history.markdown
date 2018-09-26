@@ -17,9 +17,9 @@ Fixing git history is a fairly complicated process, and can be done multiple way
 * [Step 1: Copy Current State of Repository](#step-1-copy-current-state-of-repository)
 * [Step 2: Rest History](#step-2-reset-history)
 * [Step 3: Fix Mistakes](#step-3-fix-mistakes)
-* [Step 4: Merge/Push Fix to GitHub](#step-4-merge/push-fix-to-github)
+* [Step 4: Merge/Push Fix to GitHub](#step-4-mergepush-fix-to-github)
 
-## Understanding the Issue
+# Understanding the Issue
 
  For simplicity sake this post follows an example based off a [test repository](https://github.com/jurentie/temp-test-history) which you could clone and edit to follow along. This process is very easy to mess up, and could be detrimental to large projects. *I highly encourage testing this process before making any changes on any important content.*
 
@@ -31,11 +31,11 @@ Fixing git history is a fairly complicated process, and can be done multiple way
 
  &nbsp; &nbsp;
 
-## Step 1: Copy Current State of Repository
+# Step 1: Copy Current State of Repository
 
 In order to fix the history but retain the edits made up to this point, it is best to clone the repository to a safe back up location. This will be helpful in returning the repository to its current state after fixing any issues, which is outlined later in this post. It might be best to create a backup and save it to a USB, CD, or other external device. It is also possible to copy the repository to a separate folder located elsewhere on a local machine, to be extra cautious. The decision of how securely to back up the repository will depend on how important it is to have a backup of the data.
 
-## Step 2: Reset history
+# Step 2: Reset history
 
 Once the current state of the repository is sufficiently backed up, it is safe to being making changes to history. I decided it was best to reset the history in the repository back to the merge before the commit with an issue. There may be more efficient ways of editing the exact commit with problems, but this is the best solution I have managed to find.
 
@@ -55,7 +55,7 @@ After Reset:
 
 &nbsp; &nbsp;
 
-## Step 3: Fix Mistakes
+# Step 3: Fix Mistakes
 
 Now that the branch is set back to the history before there were any issues, we will now fix the mistakes. In order to still reflect that these changes were made in a separate branch, first create a new branch.
 
@@ -73,7 +73,7 @@ This will produce a log of all the commits in history and `--stat` will specify 
 
 **Tip**: `:q` to exit the log.
 
-## Step 4: Merge/Push Fix to GitHub
+# Step 4: Merge/Push Fix to GitHub
 
 Now to make these changes and have them be reflected on GitHub...  
 
