@@ -1,8 +1,10 @@
 # Git Workflow
 
-* [Feature Branch Workflow](#feature-branch-workflow)
+* [Feature Branch Workflow](#feature-branch)
+* [Pull Requests](#pull-requests)
+* [Fast-Forward](#fast-forward)
 
-## Feature Branch Workflow
+## Feature Branch
 
 This approach is used by Open Water Foundation when a single developer is primarily
 working on any given project. In this case there may be a couple contributors with
@@ -19,48 +21,43 @@ This way master will never have any broken code.
 
 A feature branch workflow is intended to keep development from being done directly
 on the master branch, so each edit done to the code happens in it's own separate branch.
-Best practice is to first create an issue on GitHub that describes what feature is
-being added to the code.
 
+1. Best practice is to first create an issue on GitHub that describes what feature is
+being added to the code.
 ![New Issue](images/issue-created.png)
 
-Next, you can now create a feature branch from the `master` branch (sometimes referred
-to as a "topic" branch), using the issue number and label that you have just created.
-Before making the new branch, ensure that you are currently on the `master` branch
+2. Before making the new branch, ensure that you are currently on the `master` branch
 and that `master` is up to date with any recent changes.
-
 ```
 $ git checkout master
 $ git pull
 ```
 
-Now create the feature branch:  
+3. You can now create a feature branch from the `master` branch (sometimes referred
+to as a "topic" branch), using the issue number and label:  
 `checkout` switches to a new branch, `-b` creates
 the new branch to switch to, if the given branch name does not already exist.
-
 ```
-$git checkout -b 1-update-readme
+$ git checkout -b 1-update-readme
 ```
 
 <p align="center">
  <img src="images/new-feature-branch.jpg">
 </p>
 
-Once in the new feature branch, edit, stage, and commit changes to this branch in
+4. Once in the new feature branch, edit, stage, and commit changes to this branch in
 exactly the same manner as editing code on `master`.
-
 ```
 $ git status
 $ git add README.md
 $ git commit -m "updated README.md"
 ```
 
-After testing edits made to the project to insure no issues have been created,
+5. After testing edits made to the project to insure no issues have been created,
 it is safe to merge `1-update-readme` with `master`. (In a larger team of developers
 it would be best to have someone confirm that any changes made, perhaps with pull
 requests which is covered in other sections.) Switch back to `master`, ensure that
 `master` is up to date, and merge `1-update-readme` with `master` branch.
-
 ```
 $ git checkout master
 $ git pull
@@ -75,6 +72,65 @@ $ git push
 By default git will try to merge a branch using **fast-forward** mode. It is best
 practice to use **no-fast-forward** using `--no-ff`. See [below](#fast-forward) for more information
 on **fast-forward** versus **no-fast-forward**.
+
+## Pull Requests
+
+Pull requests are good to use in a larger team of developers, or in situations where
+it might be necessary to ensure another person's code is working properly. If several
+developers are working on a very important, or a very large project, it is best to
+make sure that any changes made to this repository  do not break the code. Pull
+requests are also a good way for one developer to notify the rest of the team that
+they have completed development on a single feature.
+
+Pull requests are a variant of feature branches, where instead of allowing a single
+trusted developer to automatically merge their branch with master and push it up to
+GitHub, they must get permission from other members of the team before doing so.
+
+> You can open a Pull Request at any point during the development process: when you have little or no code but want to share some screenshots or general ideas, when you're stuck and need help or advice, or when you're ready for someone to review your work. By using GitHub's @mention system in your Pull Request message, you can ask for feedback from specific people or teams, whether they're down the hall or ten time zones away.
+
+#### How it works: ####
+
+Begin by following the same steps above for creating a new feature branch to develop
+on. See above for more detail.
+
+1. Create a new issue:
+![New issue](images/issue-2.png)
+
+2. Start with updated `master`:
+```
+$ git checkout master
+$ git pull
+```
+
+3. Create new branch
+```
+$ git checkout -b 2-add-content-to-readme
+```
+
+4. Edit, stage, and commit changes
+```
+$ git status
+$ git add README.md
+$ git commit -m "updated README.md"
+```
+
+Instead of allowing a single developer to merge the edits with master, it is
+safer to create a pull request. This will require pushing the new branch to remote.
+
+5. Push branch to remote:  
+This command pushes `2-add-content-to-readme` to the central repository (origin), `-u` flag adds it as a remote tracking branch
+```
+$ git push -u origin 2-add-content-to-readme
+```
+
+Now that the new branch is pushed to remote it can be seen on GitHub's web interface
+such as below.
+
+![new pushed branch](images/new-branch.png)
+
+6. Create a pull request by clicking "Compare & pull request"
+
+
 
 ## Fast-Forward
 
@@ -102,6 +158,13 @@ feature branch. This can is seen represented by the diagram on the left below.
 <p align="center">
   <img width="500" src="images/ff-v-no-ff.png">
 </p>
+
+It is possible to configure git to automatically use `--no-ff` specifically for a
+given branch.
+
+```
+$ git config branch.master.mergeoptions "--no-ff"
+```
 
 #### Pull Requests: ####
 
