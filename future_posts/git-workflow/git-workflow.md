@@ -75,16 +75,18 @@ on **fast-forward** versus **no-fast-forward**.
 
 ## Pull Requests
 
-Pull requests are good to use in a larger team of developers, or in situations where
-it might be necessary to ensure another person's code is working properly. If several
+Pull requests are good to use in larger teams of developers, or in situations where
+it is necessary to ensure another person's code is working properly. For example, if several
 developers are working on a very important, or a very large project, it is best to
-make sure that any changes made to this repository  do not break the code. Pull
+make sure that any changes made to this repository do not break the code. Pull
 requests are also a good way for one developer to notify the rest of the team that
 they have completed development on a single feature.
 
-Pull requests are a variant of feature branches, where instead of allowing a single
-trusted developer to automatically merge their branch with master and push it up to
-GitHub, they must get permission from other members of the team before doing so.
+Pull requests are a variant of feature branches. Instead of allowing a single
+trusted developer to merge their branch without review, they must receive permission
+from other members of the team before doing so.
+
+Because every developer on the team will have write permission no fork is needed.
 
 > You can open a Pull Request at any point during the development process: when you have little or no code but want to share some screenshots or general ideas, when you're stuck and need help or advice, or when you're ready for someone to review your work. By using GitHub's @mention system in your Pull Request message, you can ask for feedback from specific people or teams, whether they're down the hall or ten time zones away.
 
@@ -132,9 +134,20 @@ assign reviewers to check the code. At the top there is a status bar that shows
 whether or not the edits made in this pull request have any merge conflicts
 with `master`. After creating the pull request there will be another window that
 clearly shows if there are any merge conflicts present.
-![Create a pull request](images/opening-pull-request.png)
 ![Pull request created](images/pull-request-created.png)
 
+7. Other developers are able to comment on the pull request and commits can continue
+to be pushed to this branch while it is under review. Once everything looks good,
+someone with write permission can merge the pull request by clicking
+"Merge pull request"
+![Review](images/review-of-pull-request.png)
+
+By default git will merge the pull request using `--no-ff` (no fast forward). See
+[below](#fast-forward) to learn more about fast forward.
+
+<p align="center">
+ <img src="images/merged-pull-request.png">
+</p>
 
 ## Fast-Forward
 
