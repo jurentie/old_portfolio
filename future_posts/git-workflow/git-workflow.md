@@ -114,22 +114,26 @@ $ git add README.md
 $ git commit -m "updated README.md"
 ```
 
-Instead of allowing a single developer to merge the edits with master, it is
-safer to create a pull request. This will require pushing the new branch to remote.
-
-5. Push branch to remote:  
-This command pushes `2-add-content-to-readme` to the central repository (origin), `-u` flag adds it as a remote tracking branch
+5. Instead of allowing a single developer to merge the edits with master, it is
+safer to create a pull request. This will require pushing the new branch to remote.  
+Push branch to remote:  
+This command pushes `2-add-content-to-readme` to the central repository (origin),
+`-u` flag adds it as a remote tracking branch
 ```
 $ git push -u origin 2-add-content-to-readme
 ```
-
 Now that the new branch is pushed to remote it can be seen on GitHub's web interface
 such as below.
-
 ![new pushed branch](images/new-branch.png)
 
-6. Create a pull request by clicking "Compare & pull request"
-
+6. Create a pull request by clicking "Compare & pull request". This will open a
+new page with options to add a label and comments to the pull request as well as
+assign reviewers to check the code. At the top there is a status bar that shows
+whether or not the edits made in this pull request have any merge conflicts
+with `master`. After creating the pull request there will be another window that
+clearly shows if there are any merge conflicts present.
+![Create a pull request](images/opening-pull-request.png)
+![Pull request created](images/pull-request-created.png)
 
 
 ## Fast-Forward
