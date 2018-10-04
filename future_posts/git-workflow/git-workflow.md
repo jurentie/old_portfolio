@@ -42,7 +42,9 @@ the new branch to switch to, if the given branch name does not already exist.
 $git checkout -b 1-update-readme
 ```
 
-![New Feature Branch](images/new-feature-branch.jpg)
+<p align="center">
+ <img src="images/new-feature-branch.jpg">
+</p>
 
 Once in the new feature branch, edit, stage, and commit changes to this branch in
 exactly the same manner as editing code on `master`.
@@ -66,7 +68,9 @@ $ git merge --no-ff 1-update-readme
 $ git push
 ```
 
-![Merge No FF](images/merge-no-ff.png)
+<p align="center">
+  <img src="images/merge-no-ff.png">
+</p>
 
 By default git will try to merge a branch using **fast-forward** mode. It is best
 practice to use **no-fast-forward** using `--no-ff`. See [below](#fast-forward) for more information
@@ -95,14 +99,18 @@ With **no-fast-forward** being used, git will maintain the feature branch in the
 history and create a new commit on `master` representing the merge with that
 feature branch. This can is seen represented by the diagram on the left below.
 
-![Fast Forward versus No Fast Forward](images/ff-v-no-ff.png)
+<p align="center">
+  <img width="500" src="images/ff-v-no-ff.png">
+</p>
 
 #### Pull Requests: ####
 
 When working with pull requests on GitHub's web interface via the green
 "Merge pull request" button, the default behavior is to use no fast-forward.
 
-![Merge pull request](images/automerge.png)
+<p align="center">
+  <img width="500" src="images/automerge.png">
+</p>
 
 GitHub behaves this way to ensure that pull requests can be identified later on.
 However, it is possible to merge a pull request with fast forward for pull requests
