@@ -6,6 +6,7 @@
 * [Pull Requests](#pull-requests)
 * [Forking a Repository](#forking-a-repository)
 * [Fast-Forward](#fast-forward)
+* [References](#references)
 
 ## Feature Branch - Single Developer
 
@@ -154,23 +155,23 @@ new commits pushed to the remote branch will appear in the pull request.
 8. Once everything looks good, someone with write permission can merge the pull
 request by clicking "Merge pull request"
 
-By default git will merge the pull request using `--no-ff` (no fast forward). See
-[below](#fast-forward) to learn more about fast forward.
-
 <p align="center">
  <img src="images/merged-pull-request.png">
 </p>
+
+By default git will merge the pull request using `--no-ff` (**no-fast-forward**). See
+[below](#fast-forward) to learn more about fast forward.
 
 ## Fast-Forward
 
 #### Feature Branches: ####
 
-By default git will try to merge a branch using **fast-forward** mode.
+When merging a feature branch, by default git will try to merge a using **fast-forward** mode.
 ```
 $ git merge feature-branch
 ```
 
-When **fast-forward** is applied to a merge, git will merge the commits in a linear
+When **fast-forward** is applied to a merge, git will merge the commits in a *linear*
 fashion. When looking at the network diagram in the repository "Insights" the
 history will look like the diagram on the right below.
 
@@ -180,9 +181,10 @@ To force git to merge with no fast forward use the parameter `--no-ff`:
 $ git merge --no-ff feature-branch
 ```
 
-With **no-fast-forward** being used, git will maintain the feature branch in the
+With **no-fast-forward**, git will maintain the feature branch in the
 history and create a new commit on `master` representing the merge with that
-feature branch. This can is seen represented by the diagram on the left below.
+feature branch, as well as representing the commits from that branch separate from
+`master`. This can be seen represented by the diagram on the left below.
 
 <p align="center">
   <img width="500" src="images/ff-v-no-ff.png">
@@ -207,3 +209,10 @@ When working with pull requests on GitHub's web interface via the green
 GitHub behaves this way to ensure that pull requests can be identified later on.
 However, it is possible to merge a pull request with fast forward for pull requests
 with squashed or rebased commits.
+
+## References ##
+* [Git Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
+* [Fast-Forward Git Merge](https://ariya.io/2013/09/fast-forward-git-merge)
+* [Can I make fast forwarding be off by default in git?](https://stackoverflow.com/questions/2500296/can-i-make-fast-forwarding-be-off-by-default-in-git)
+* [About pull requests](https://help.github.com/articles/about-pull-requests/)
+* [Merging a pull request](https://help.github.com/articles/merging-a-pull-request/)
