@@ -22,25 +22,28 @@ exactly what code was added to make changes to the project.
 All development that takes place is done in feature branches and never in `master`.
 This way master will never have any broken code.
 
+It is good practice to use feature branches in all of the workflows described
+throughout this documentation.
+
 #### How it works: ####
 
 A feature branch workflow is intended to keep development from being done directly
 on the master branch, so each feature added to the code resides in it's own
 separate branch.
 
-1. Following best practices, first create an issue on GitHub that describes what feature is
+1. Following best practices, create an issue on GitHub that describes what feature is
 being added to the code.
 ![New Issue](images/issue-created.png)
 
-2. Before making the new branch, ensure that you are currently on the master branch
+2. Before making the feature branch, ensure the current branch is `master`
 and that `master` is up to date with any recent changes.
 ```
 $ git checkout master
 $ git pull
 ```
 
-3. You can now create a feature branch from the master branch (sometimes referred
-to as a "topic" branch), using the issue number and label:  
+3. Create a feature branch (sometimes referred
+to as a "topic" branch) from `master`, using the issue number and label:  
 ```
 $ git checkout -b 1-update-readme
 ```
@@ -52,17 +55,17 @@ The figure below represents a new branch being created off of `master`.
 </p>
 
 4. Once in the new feature branch, edit, stage, and commit changes to this branch in
-exactly the same manner when editing code on `master`.
+exactly the same manner used when editing code on `master`.
 ```
 $ git status
 $ git add README.md
 $ git commit -m "updated README.md"
 ```
 
-5. After testing the feature to insure no issues,
+5. After testing the feature to ensure no issues,
 it is safe to merge `1-update-readme` with `master`. (In a larger team of developers
-it would be best to have someone confirm that any changes made, perhaps with [pull
-requests](#pull-requests) discussed below.) Switch back to `master`, ensure that
+it would be best to have someone approve any changes made, perhaps with [pull
+requests](#pull-requests) discussed below.) To merge, switch back to `master`, ensure that
 `master` is up to date, and merge `1-update-readme` with `master` branch.
 ```
 $ git checkout master
@@ -71,6 +74,8 @@ $ git merge --no-ff 1-update-readme
 $ git push
 ```
 
+Below is an example of what a non-fast-forwarded feature branch looks like when
+merged with master, taken from the network chart on GitHub.
 <p align="center">
   <img src="images/merge-no-ff.png">
 </p>
