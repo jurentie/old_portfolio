@@ -1,18 +1,37 @@
-# Git Workflow
+---
+layout: post
+title:  "Git Workflow"
+date:   2018-10-05 5:00:18 -0600
+categories: Git
+---
 
 ## Table of Contents ##
 
+* [Introduction](#introduction)
 * [Feature Branch Workflow](#feature-branch---single-developer)
 * [Pull Requests](#pull-requests---multiple-developers)
 * [Forking a Repository](#forking-a-repository---open-source)
 * [Fast-Forward](#fast-forward)
 * [References](#references)
 
-## Feature Branch - Single Developer ##
+## Introduction ##
 
-This approach is used by Open Water Foundation when a single developer is primarily
-working on a given project. In this case there may be a couple contributors with
-write permission to the repository, but one developer is doing most of the work.
+At work I have been tasked with learning the various git workflows a developer may
+have when contributing to code. Whether this be a single developer on a project, a
+team of developers collaborating on a large project, or a single user who is part of
+the open source community and would like to help contribute to someone else's
+project.
+
+I have been all over the internet learning as much as I can about the technicalities
+involved in different approaches in a git contributors workflow. Along the way I
+have been documenting many of the things I have learned both for work and to publish
+on my site as future reference for myself, and to help others that might take an
+interest in learning more about git.
+
+Below you will find information and examples on the details of different approaches
+to git.
+
+## Feature Branch - Single Developer ##
 
 When using the feature branch workflow it is easy to keep track of exactly what code
 is being added or removed from the overall project. Edits should be made in small
@@ -23,17 +42,17 @@ All development that takes place is done in feature branches and never in `maste
 This way master will never have any broken code.
 
 It is good practice to use feature branches in all of the workflows described
-throughout this documentation.
+throughout this post.
 
 #### How it works: ####
 The following is an example of using a feature branch to do development on a single
 project.
 
-1. Following best practices, begin by create an issue on GitHub that describes what feature is
+1. Following best practices, begin by creating an issue on GitHub that describes what feature is
 being added to the code.
 ![New Issue](images/issue-created.png)
 
-2. Before making the feature branch, ensure the current branch is `master`
+2. Before making the feature branch, ensure you are on the master branch,
 and that `master` is up to date with any recent changes.
 ```
 $ git checkout master
@@ -41,13 +60,15 @@ $ git pull
 ```
 
 3. Create a feature branch (sometimes referred
-to as a "topic" branch) from `master`, using the issue number and label:  
+to as a "topic" branch) from `master`. You want to be as precise and detailed as
+possible in naming the new branch. Here I am using the issue number and label, which
+seems to be common practice.  
 ```
 $ git checkout -b 1-update-readme
 ```
-`checkout` switches to a new branch, `-b` creates
+`checkout` *switches to a new branch,* `-b` *creates
 the new branch if the given branch name does not already exist.  
-The figure below represents a new branch being created off of `master`.
+The figure below represents a new branch being created off of* `master`.
 <p align="center">
  <img src="images/new-feature-branch.jpg">
 </p>
@@ -104,8 +125,8 @@ covered below.
 #### How it works: ####
 
 Begin by following the same steps above (1-4) for creating a new feature branch to develop
-on. See [above](#feature-branch---single-developer) for more detail. The feature branch in the following example is `2-add-content-to-readme`, and once again the example is adding more information to
-the README.md file.
+on. See [above](#feature-branch---single-developer) for more detail. The feature branch in the following example is `2-add-content-to-readme`, and once again the example is adding
+more information to the README.md file.
 
 After making edits in a feature branch, instead of allowing a single developer to
 merge the edits with `master`, it is safer to create a pull request. To do this,
@@ -116,9 +137,9 @@ pull request.
 ```
 $ git push -u origin 2-add-content-to-readme
 ```
-This command pushes `2-add-content-to-readme` to the central repository (origin),
-`-u` flag adds it as a remote tracking branch, so any future edits can be pushed via
-`$ git push` without as many flags and parameters.  
+*This command pushes* `2-add-content-to-readme` *to the central repository (origin),*
+`-u` *flag adds it as a remote tracking branch, so any future edits can be pushed via*
+`$ git push` *without as many flags and parameters.*  
 Now that the new branch is pushed to remote it can be seen on GitHub's web interface
 such as below.
 ![new pushed branch](images/new-branch.png)
