@@ -11,13 +11,13 @@
 ## Feature Branch - Single Developer ##
 
 This approach is used by Open Water Foundation when a single developer is primarily
-working on any given project. In this case there may be a couple contributors with
+working on a given project. In this case there may be a couple contributors with
 write permission to the repository, but one developer is doing most of the work.
 
 When using the feature branch workflow it is easy to keep track of exactly what code
-is being added or removed from the overall project. These edits are made in small,
-concise, feature branches. This makes it easier to go back in history and find
-exactly what code was added to make changes to the project.
+is being added or removed from the overall project. Edits should be made in small
+incremental stages using separate feature branches. This makes it easier to go back in
+history and find exactly what code was added to make changes to the project.
 
 All development that takes place is done in feature branches and never in `master`.
 This way master will never have any broken code.
@@ -26,12 +26,10 @@ It is good practice to use feature branches in all of the workflows described
 throughout this documentation.
 
 #### How it works: ####
+The following is an example of using a feature branch to do development on a single
+project.
 
-A feature branch workflow is intended to keep development from being done directly
-on the master branch, so each feature added to the code resides in it's own
-separate branch.
-
-1. Following best practices, create an issue on GitHub that describes what feature is
+1. Following best practices, begin by create an issue on GitHub that describes what feature is
 being added to the code.
 ![New Issue](images/issue-created.png)
 
@@ -81,7 +79,7 @@ merged with master, taken from the network chart on GitHub.
 </p>
 
 By default git will try to merge a branch using **fast-forward** mode. It is best
-practice to use **no-fast-forward** witht the following flag `--no-ff`. See [below](#fast-forward) for more information
+practice to use **no-fast-forward** with the following flag `--no-ff`. See [below](#fast-forward) for more information
 on **fast-forward** versus **no-fast-forward**.
 
 ## Pull Requests - Multiple Developers ##
@@ -89,7 +87,7 @@ on **fast-forward** versus **no-fast-forward**.
 Pull requests are good to use in larger teams of developers, or in situations where
 it is necessary to ensure another person's code is working properly. For example, if several
 developers are working on a very important, or a very large project, it is best to
-make sure that any changes made to this repository do not break the code. Pull
+make sure that any changes made to this repository will not break the code. Pull
 requests are also a good way for one developer to notify the rest of the team that
 they have completed development on a single feature.
 
@@ -97,47 +95,30 @@ Pull requests are an extension of feature branches. Instead of allowing a single
 trusted developer to merge their branch without review, they must receive permission
 from other members of the team before doing so.
 
-Because every developer on the team will have write permission no fork is needed.
-[Forking a repository](#forking-a-repository) is covered below.
+In the following example, ever developer on the team will have write permission
+therefore no fork is needed. [Forking a repository](#forking-a-repository) is
+covered below.
 
 > You can open a Pull Request at any point during the development process: when you have little or no code but want to share some screenshots or general ideas, when you're stuck and need help or advice, or when you're ready for someone to review your work. By using GitHub's @mention system in your Pull Request message, you can ask for feedback from specific people or teams, whether they're down the hall or ten time zones away.
 
 #### How it works: ####
 
-Begin by following the same steps above for creating a new feature branch to develop
-on. See above for more detail.
+Begin by following the same steps above (1-4) for creating a new feature branch to develop
+on. See above for more detail. The feature branch in the following example is `2-add-content-to-readme`, and once again the example is adding more information to
+the README.md file.
 
-1. Create a new issue:
-![New issue](images/issue-2.png)
-
-2. Start with updated `master`:
-```
-$ git checkout master
-$ git pull
-```
-
-3. Create new branch
-```
-$ git checkout -b 2-add-content-to-readme
-```
-
-4. Edit, stage, and commit changes
-```
-$ git status
-$ git add README.md
-$ git commit -m "updated README.md"
-```
-
-Instead of allowing a single developer to merge the edits with `master`, it is
-safer to create a pull request. To do this, the feature branch must be pushed to
-remote. This differs from the feature branch workflow above.  
+After making edits in a feature branch, instead of allowing a single developer to
+merge the edits with `master`, it is safer to create a pull request. To do this,
+the feature branch must be pushed to remote. Below is an example of creating a
+pull request.
 
 5. Push branch to remote
 ```
 $ git push -u origin 2-add-content-to-readme
 ```
 This command pushes `2-add-content-to-readme` to the central repository (origin),
-`-u` flag adds it as a remote tracking branch.  
+`-u` flag adds it as a remote tracking branch, so any future edits can be pushed via
+`$ git push` without as many flags and parameters.  
 Now that the new branch is pushed to remote it can be seen on GitHub's web interface
 such as below.
 ![new pushed branch](images/new-branch.png)
@@ -148,7 +129,7 @@ assign reviewers to check the code. At the top there is a status bar that shows
 whether or not the edits made in this pull request have any merge conflicts
 with `master`. After creating the pull request there will be another window that
 clearly shows if there are any merge conflicts present, as well as a big green
-"Merge pull request" button.
+"Merge pull request" button, as seen below.
 ![Pull request created](images/pull-request-created.png)
 
 7. Other developers are able to comment on the pull request and, upon review, any
@@ -157,6 +138,9 @@ new commits pushed to the remote branch will appear in the pull request.
 
 8. Once everything looks good, someone with write permission can merge the pull
 request by clicking "Merge pull request"
+
+Below is an example of what a merged pull request look like, taken from the network
+chart on GitHub.
 
 <p align="center">
  <img src="images/merged-pull-request.png">
