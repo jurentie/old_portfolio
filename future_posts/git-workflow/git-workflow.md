@@ -95,16 +95,16 @@ Pull requests are an extension of feature branches. Instead of allowing a single
 trusted developer to merge their branch without review, they must receive permission
 from other members of the team before doing so.
 
-In the following example, ever developer on the team will have write permission
+> You can open a Pull Request at any point during the development process: when you have little or no code but want to share some screenshots or general ideas, when you're stuck and need help or advice, or when you're ready for someone to review your work. By using GitHub's @mention system in your Pull Request message, you can ask for feedback from specific people or teams, whether they're down the hall or ten time zones away.
+
+In the following example, every developer on the team will have write permission
 therefore no fork is needed. [Forking a repository](#forking-a-repository) is
 covered below.
-
-> You can open a Pull Request at any point during the development process: when you have little or no code but want to share some screenshots or general ideas, when you're stuck and need help or advice, or when you're ready for someone to review your work. By using GitHub's @mention system in your Pull Request message, you can ask for feedback from specific people or teams, whether they're down the hall or ten time zones away.
 
 #### How it works: ####
 
 Begin by following the same steps above (1-4) for creating a new feature branch to develop
-on. See above for more detail. The feature branch in the following example is `2-add-content-to-readme`, and once again the example is adding more information to
+on. See [above](#feature-branch---single-developer) for more detail. The feature branch in the following example is `2-add-content-to-readme`, and once again the example is adding more information to
 the README.md file.
 
 After making edits in a feature branch, instead of allowing a single developer to
@@ -127,13 +127,14 @@ such as below.
 new page with options to add a label and comments to the pull request as well as
 assign reviewers to check the code. At the top there is a status bar that shows
 whether or not the edits made in this pull request have any merge conflicts
-with `master`. After creating the pull request there will be another window that
+with `master`. After creating the pull request there will be another page that
 clearly shows if there are any merge conflicts present, as well as a big green
-"Merge pull request" button, as seen below.
+"Merge pull request" button, provided there are no issues, as seen below.
 ![Pull request created](images/pull-request-created.png)
 
 7. Other developers are able to comment on the pull request and, upon review, any
-new commits pushed to the remote branch will appear in the pull request.
+new commits pushed to the remote branch will appear in a linear fashion, between
+comments on the pull request.
 ![Review](images/review-of-pull-request.png)
 
 8. Once everything looks good, someone with write permission can merge the pull
