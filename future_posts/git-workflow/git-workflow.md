@@ -2,9 +2,9 @@
 
 ## Table of Contents ##
 
-* [Feature Branch Workflow](#feature-branch-single-developer)
-* [Pull Requests](#pull-requests)
-* [Forking a Repository](#forking-a-repository)
+* [Feature Branch Workflow](#feature-branch---single-developer)
+* [Pull Requests](#pull-requests---multiple-developers)
+* [Forking a Repository](#forking-a-repository---open-source)
 * [Fast-Forward](#fast-forward)
 * [References](#references)
 
@@ -79,7 +79,7 @@ By default git will try to merge a branch using **fast-forward** mode. It is bes
 practice to use **no-fast-forward** witht the following flag `--no-ff`. See [below](#fast-forward) for more information
 on **fast-forward** versus **no-fast-forward**.
 
-## Pull Requests ##
+## Pull Requests - Multiple Developers ##
 
 Pull requests are good to use in larger teams of developers, or in situations where
 it is necessary to ensure another person's code is working properly. For example, if several
@@ -160,7 +160,53 @@ request by clicking "Merge pull request"
 By default git will merge the pull request using `--no-ff` (**no-fast-forward**). See
 [below](#fast-forward) to learn more about fast forward.
 
-# Forking a Repository
+## Forking a Repository - Open Source ##
+
+Once a project is made public other developers in the public may want to make changes
+to the repository. This can be done by forking a repository. Forking is a unique
+way of making a copy of a personal repository and saving it on your GitHub. Sometimes forking
+can be used as a way to take someone else's project and begin your own.
+
+#### How it works: ####
+
+1. First navigate to the public repository where contributions will be made to the code,
+and click "Fork" in the upper right hand corner.
+<p align="center">
+  <img width="300" src="images/Bootcamp-Fork.png">
+</p>
+This repository will now be forked and a personal copy will be made to the users
+personal GitHub account. This will be reflected in the repository title.
+<p align="center">
+  <img src="images/forked.png">
+</p>
+
+2. The repository will now need to be cloned locally, in order to make any changes
+to the project.
+```
+$ git clone https://github.com/JustinsTeamMate/feature_branch_workflow.git
+```
+
+3. Edit, stage, and commit changes.
+```
+$ git status
+$ git add README.md
+$ git commit -m "updated README.md"
+```
+
+4. Push changes to remote repository.
+```
+$ git push
+```
+After pushing to remote GitHub will show that the personal repository is ahead of
+the original repository.
+<p align="center">
+  <img src="images/ahead.png">
+</p>
+
+5. Click "Pull request" near the notification that this personal branch is ahead of
+master. From here the process of contributing to a public repository is the same as
+the section above on [pull requests](#pull-requests---multiple-developers). See above
+for more detail.
 
 ## Fast-Forward ##
 
@@ -211,8 +257,9 @@ However, it is possible to merge a pull request with fast forward for pull reque
 with squashed or rebased commits.
 
 ## References ##
-* [Git Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
-* [Fast-Forward Git Merge](https://ariya.io/2013/09/fast-forward-git-merge)
-* [Can I make fast forwarding be off by default in git?](https://stackoverflow.com/questions/2500296/can-i-make-fast-forwarding-be-off-by-default-in-git)
 * [About pull requests](https://help.github.com/articles/about-pull-requests/)
+* [Can I make fast forwarding be off by default in git?](https://stackoverflow.com/questions/2500296/can-i-make-fast-forwarding-be-off-by-default-in-git)
+* [Forking Projects](https://guides.github.com/activities/forking/)
+* [Fast-Forward Git Merge](https://ariya.io/2013/09/fast-forward-git-merge)
+* [Git Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow)
 * [Merging a pull request](https://help.github.com/articles/merging-a-pull-request/)
