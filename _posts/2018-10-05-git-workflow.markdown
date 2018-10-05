@@ -8,19 +8,25 @@ categories: Git
 This post is on the topic of various git workflows.
 
 At work I have been tasked with learning the various git workflows a developer may
-have when contributing to code. Whether this be a single developer on a project, a
+use when contributing to a project. Whether this be a single developer on a project, a
 team of developers collaborating on a large project, or a single user who is part of
 the open source community and would like to help contribute to someone else's
 project.
 
 I have been all over the internet learning as much as I can about the technicalities
-involved in different approaches in a git contributors workflow. Along the way I
-have been documenting many of the things I have learned both for work and to publish
-on my site as future reference for myself, and to help others that might take an
-interest in learning more about git.
+involved in different approaches when contributing to a project hosted on GitHub.
+(I am sure that most of this information pertains to other version control platforms
+such as bitbucket.)
+Along the way I have been documenting many of the things I have learned both for
+work and to publish on my site as future reference for myself, and to help others
+that might take an interest in learning more about git.
 
 Below you will find information and examples on the details of different approaches
 to git.
+
+You can find the repository where all of the examples originate [here](https://github.com/jurentie/feature_branch_workflow). Feel free
+to fork this repo and make changes to practice, that is after you learn about
+forking below.
 
 * [Feature Branch Workflow](#feature-branch---single-developer)
 * [Pull Requests](#pull-requests---multiple-developers)
@@ -31,23 +37,23 @@ to git.
 ## Feature Branch - Single Developer ##
 
 When using the feature branch workflow it is easy to keep track of exactly what code
-is being added or removed from the overall project. Edits should be made in small
-incremental stages using separate feature branches. This makes it easier to go back in
+is being added or removed from the overall project. Edits should be made in small,
+incremental, stages using separate feature branches. This makes it easier to go back in
 history and find exactly what code was added to make changes to the project.
 
 All development that takes place is done in feature branches and never in `master`.
-This way master will never have any broken code.
+This way `master` will never have any broken code.
 
 It is good practice to use feature branches in all of the workflows described
-throughout this post.
+throughout this post, for better clarity on changes to the code.
 
 #### How it works: ####
 The following is an example of using a feature branch to do development on a single
-project.
+project, where the code is being edited by a single developer.
 
 1. Following best practices, begin by creating an issue on GitHub that describes what feature is
 being added to the code.
-![New Issue](images/issue-created.png)
+![New Issue]({{ '/images/issue-created.png' | absolute_url }})
 
 2. Before making the feature branch, ensure you are on the master branch,
 and that `master` is up to date with any recent changes.
@@ -64,10 +70,10 @@ seems to be common practice.
 $ git checkout -b 1-update-readme
 ```
 `checkout` *switches to a new branch,* `-b` *creates
-the new branch if the given branch name does not already exist.  
-The figure below represents a new branch being created off of* `master`.
+the new branch if the given branch name does not already exist.*  
+The figure below represents a new branch being created off of `master`.
 <p align="center">
- <img src="images/new-feature-branch.jpg">
+ <img src="{{ 'images/new-feature-branch.jpg' | absolute_url }}">
 </p>
 
 4. Once in the new feature branch, edit, stage, and commit changes to this branch in
@@ -81,7 +87,7 @@ $ git commit -m "updated README.md"
 5. After testing the feature to ensure no issues,
 it is safe to merge `1-update-readme` with `master`. (In a larger team of developers
 it would be best to have someone approve any changes made, perhaps with [pull
-requests](#pull-requests) discussed below.) To merge, switch back to `master`, ensure that
+requests](#pull-requests---multiple-developers) discussed below.) To merge, switch back to `master`, ensure that
 `master` is up to date, and merge `1-update-readme` with `master` branch.
 ```
 $ git checkout master
@@ -93,7 +99,7 @@ $ git push
 Below is an example of what a non-fast-forwarded feature branch looks like when
 merged with master, taken from the network chart on GitHub.
 <p align="center">
-  <img src="images/merge-no-ff.png">
+  <img src="{{ '/images/merge-no-ff.png' | absolute_url }}">
 </p>
 
 By default git will try to merge a branch using **fast-forward** mode. It is best
@@ -130,7 +136,7 @@ merge the edits with `master`, it is safer to create a pull request. To do this,
 the feature branch must be pushed to remote. Below is an example of creating a
 pull request.
 
-5. Push branch to remote
+1. Push branch to remote
 ```
 $ git push -u origin 2-add-content-to-readme
 ```
@@ -139,30 +145,30 @@ $ git push -u origin 2-add-content-to-readme
 `$ git push` *without as many flags and parameters.*  
 Now that the new branch is pushed to remote it can be seen on GitHub's web interface
 such as below.
-![new pushed branch](images/new-branch.png)
+![new pushed branch]({{ 'images/new-branch.png' | absolute_url }})
 
-6. Create a pull request by clicking "Compare & pull request". This will open a
+2. Create a pull request by clicking "Compare & pull request". This will open a
 new page with options to add a label and comments to the pull request as well as
 assign reviewers to check the code. At the top there is a status bar that shows
 whether or not the edits made in this pull request have any merge conflicts
 with `master`. After creating the pull request there will be another page that
 clearly shows if there are any merge conflicts present, as well as a big green
 "Merge pull request" button, provided there are no issues, as seen below.
-![Pull request created](images/pull-request-created.png)
+![Pull request created]({{ 'images/pull-request-created.png' | absolute_url }})
 
-7. Other developers are able to comment on the pull request and, upon review, any
+3. Other developers are able to comment on the pull request and, upon review, any
 new commits pushed to the remote branch will appear in a linear fashion, between
 comments on the pull request.
-![Review](images/review-of-pull-request.png)
+![Review]({{ 'images/review-of-pull-request.png' | absolute_url }})
 
-8. Once everything looks good, someone with write permission can merge the pull
+4. Once everything looks good, someone with write permission can merge the pull
 request by clicking "Merge pull request"
 
 Below is an example of what a merged pull request looks like, taken from the network
 chart on GitHub.
 
 <p align="center">
- <img src="images/merged-pull-request.png">
+ <img src="{{ 'images/merged-pull-request.png' | absolute_url }}">
 </p>
 
 By default git will merge the pull request using `--no-ff` (**no-fast-forward**). See
@@ -181,12 +187,12 @@ on your personal GitHub profile. Sometimes forking can be used as a way to take 
 1. First navigate to the public repository where contributions will be made to the code,
 and click "Fork" in the upper right hand corner.
 <p align="center">
-  <img width="300" src="images/Bootcamp-Fork.png">
+  <img width="300" src="{{ 'images/Bootcamp-Fork.png' | absolute_url }}">
 </p>
 This repository will now be forked and a personal copy will be made to the users
 personal GitHub account. This will be reflected in the repository title.
 <p align="center">
-  <img src="images/forked.png">
+  <img src="{{ 'images/forked.png' | absolute_url }}">
 </p>
 
 2. The repository will now need to be cloned locally, in order to make any changes
@@ -209,7 +215,7 @@ $ git push
 After pushing to remote GitHub will show that the personal repository is ahead of
 the original repository.
 <p align="center">
-  <img src="images/ahead.png">
+  <img src="{{ 'images/ahead.png' | absolute_url }}">
 </p>
 
 5. Click "Pull request". From here the process of contributing to a public repository is the same as the section above on [pull requests](#pull-requests---multiple-developers). See above
@@ -220,7 +226,7 @@ merging edits using 1) feature branch 2) pull requests 3) forking a repository. 
 is clean to look at and clear to understand where each edit was made.
 
 <p align="center">
-  <img src="images/final-network.png">
+  <img src="{{ 'images/final-network.png' | absolute_url }}">
 </p>
 
 All of the merges in the diagram above were made using **no-fast-forward** option.
@@ -250,7 +256,7 @@ feature branch, as well as representing the commits from that branch separate fr
 `master`. This can be seen represented by the diagram on the left below.
 
 <p align="center">
-  <img width="500" src="images/ff-v-no-ff.png">
+  <img width="500" src="{{ 'images/ff-v-no-ff.png' | absolute_url }}">
 </p>
 
 It is possible to configure git to automatically use `--no-ff` specifically for a
@@ -266,7 +272,7 @@ When working with pull requests on GitHub's web interface via the green
 "Merge pull request" button, the default behavior is to use no fast-forward.
 
 <p align="center">
-  <img width="500" src="images/automerge.png">
+  <img width="500" src="{{ 'images/automerge.png' | absolute_url }}">
 </p>
 
 GitHub behaves this way to ensure that pull requests can be identified later on.
