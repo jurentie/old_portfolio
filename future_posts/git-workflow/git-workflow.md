@@ -98,7 +98,7 @@ from other members of the team before doing so.
 > You can open a Pull Request at any point during the development process: when you have little or no code but want to share some screenshots or general ideas, when you're stuck and need help or advice, or when you're ready for someone to review your work. By using GitHub's @mention system in your Pull Request message, you can ask for feedback from specific people or teams, whether they're down the hall or ten time zones away.
 
 In the following example, every developer on the team will have write permission
-therefore no fork is needed. [Forking a repository](#forking-a-repository) is
+therefore no fork is needed. [Forking a repository](#forking-a-repository---open-source) is
 covered below.
 
 #### How it works: ####
@@ -153,7 +153,8 @@ By default git will merge the pull request using `--no-ff` (**no-fast-forward**)
 ## Forking a Repository - Open Source ##
 
 Once a project is made public other developers in the open source community may
-want to make changes to the repository. This can be done by forking a repository.
+want to make changes to the repository, but do not have write permissions to the project.
+Users with no write permission can propose changes by forking the repository.
 Forking is a unique way of making a copy of a repository and saving it
 on your personal GitHub profile. Sometimes forking can be used as a way to take someone else's project and begin your own.
 
@@ -196,18 +197,28 @@ the original repository.
 5. Click "Pull request". From here the process of contributing to a public repository is the same as the section above on [pull requests](#pull-requests---multiple-developers). See above
 for more detail.
 
+Below is an example of what the current state of the repository looks like after
+merging edits using 1) feature branch 2) pull requests 3) forking a repository. It
+is clean to look at and clear to understand where each edit was made.
+
+<p align="center">
+  <img src="images/final-network.png">
+</p>
+
+All of the merges in the diagram above were made using **no-fast-forward** option.
+See [below](#fast-forward) for more information.
+
 ## Fast-Forward ##
 
 #### Feature Branches: ####
 
-When merging a feature branch, by default git will try to merge a using **fast-forward** mode.
+When merging a feature branch, by default git will try to merge using **fast-forward** mode.
 ```
 $ git merge feature-branch
 ```
 
 When **fast-forward** is applied to a merge, git will merge the commits in a *linear*
-fashion. When looking at the network diagram in the repository "Insights" the
-history will look like the diagram on the right below.
+fashion. The history will look like the diagram on the right below.
 
 To force git to merge with no fast forward use the parameter `--no-ff`:
 
