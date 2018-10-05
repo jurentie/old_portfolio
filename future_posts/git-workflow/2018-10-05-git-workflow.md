@@ -5,16 +5,7 @@ date:   2018-10-05 5:00:18 -0600
 categories: Git
 ---
 
-## Table of Contents ##
-
-* [Introduction](#introduction)
-* [Feature Branch Workflow](#feature-branch---single-developer)
-* [Pull Requests](#pull-requests---multiple-developers)
-* [Forking a Repository](#forking-a-repository---open-source)
-* [Fast-Forward](#fast-forward)
-* [References](#references)
-
-## Introduction ##
+This post is on the topic of various git workflows.
 
 At work I have been tasked with learning the various git workflows a developer may
 have when contributing to code. Whether this be a single developer on a project, a
@@ -30,6 +21,13 @@ interest in learning more about git.
 
 Below you will find information and examples on the details of different approaches
 to git.
+
+* [Introduction](#introduction)
+* [Feature Branch Workflow](#feature-branch---single-developer)
+* [Pull Requests](#pull-requests---multiple-developers)
+* [Forking a Repository](#forking-a-repository---open-source)
+* [Fast-Forward](#fast-forward)
+* [References](#references)
 
 ## Feature Branch - Single Developer ##
 
