@@ -1,6 +1,6 @@
 # Git Workflow
 
-## Table of Contents#
+## Table of Contents ##
 
 * [Feature Branch Workflow](#feature-branch-single-developer)
 * [Pull Requests](#pull-requests)
@@ -8,7 +8,7 @@
 * [Fast-Forward](#fast-forward)
 * [References](#references)
 
-## Feature Branch - Single Developer
+## Feature Branch - Single Developer ##
 
 This approach is used by Open Water Foundation when a single developer is primarily
 working on any given project. In this case there may be a couple contributors with
@@ -79,7 +79,7 @@ By default git will try to merge a branch using **fast-forward** mode. It is bes
 practice to use **no-fast-forward** witht the following flag `--no-ff`. See [below](#fast-forward) for more information
 on **fast-forward** versus **no-fast-forward**.
 
-## Pull Requests
+## Pull Requests ##
 
 Pull requests are good to use in larger teams of developers, or in situations where
 it is necessary to ensure another person's code is working properly. For example, if several
@@ -97,7 +97,7 @@ Because every developer on the team will have write permission no fork is needed
 
 > You can open a Pull Request at any point during the development process: when you have little or no code but want to share some screenshots or general ideas, when you're stuck and need help or advice, or when you're ready for someone to review your work. By using GitHub's @mention system in your Pull Request message, you can ask for feedback from specific people or teams, whether they're down the hall or ten time zones away.
 
-# Forking a Repository
+# Forking a Repository #
 
 #### How it works: ####
 
@@ -162,7 +162,7 @@ request by clicking "Merge pull request"
 By default git will merge the pull request using `--no-ff` (**no-fast-forward**). See
 [below](#fast-forward) to learn more about fast forward.
 
-## Fast-Forward
+## Fast-Forward ##
 
 #### Feature Branches: ####
 
