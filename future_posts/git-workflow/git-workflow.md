@@ -140,7 +140,7 @@ comments on the pull request.
 8. Once everything looks good, someone with write permission can merge the pull
 request by clicking "Merge pull request"
 
-Below is an example of what a merged pull request look like, taken from the network
+Below is an example of what a merged pull request looks like, taken from the network
 chart on GitHub.
 
 <p align="center">
@@ -152,10 +152,10 @@ By default git will merge the pull request using `--no-ff` (**no-fast-forward**)
 
 ## Forking a Repository - Open Source ##
 
-Once a project is made public other developers in the public may want to make changes
-to the repository. This can be done by forking a repository. Forking is a unique
-way of making a copy of a personal repository and saving it on your GitHub. Sometimes forking
-can be used as a way to take someone else's project and begin your own.
+Once a project is made public other developers in the open source community may
+want to make changes to the repository. This can be done by forking a repository.
+Forking is a unique way of making a copy of a repository and saving it
+on your personal GitHub profile. Sometimes forking can be used as a way to take someone else's project and begin your own.
 
 #### How it works: ####
 
@@ -176,7 +176,7 @@ to the project.
 $ git clone https://github.com/JustinsTeamMate/feature_branch_workflow.git
 ```
 
-3. Edit, stage, and commit changes.
+3. Edit, stage, and commit changes to the forked repository.
 ```
 $ git status
 $ git add README.md
@@ -193,9 +193,7 @@ the original repository.
   <img src="images/ahead.png">
 </p>
 
-5. Click "Pull request" near the notification that this personal branch is ahead of
-master. From here the process of contributing to a public repository is the same as
-the section above on [pull requests](#pull-requests---multiple-developers). See above
+5. Click "Pull request". From here the process of contributing to a public repository is the same as the section above on [pull requests](#pull-requests---multiple-developers). See above
 for more detail.
 
 ## Fast-Forward ##
