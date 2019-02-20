@@ -295,7 +295,7 @@ html header to be inherited by all other templates.
 <html>
 <head>
   <meta charset="utf-8">
-  <title>{% block title %}Django Tutorial{% endblock %}</title>
+  <title>{% raw %}{% block title %}{% endraw %}Django Tutorial{% raw %}{% endblock %}{% endraw %}</title>
 </head>
 <body>
     <div class="header">
