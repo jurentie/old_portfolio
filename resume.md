@@ -13,14 +13,41 @@ permalink: /resume/
 
 ### Skills: ###
 ---
-***Programming Languages***: Java, C, C++, Python, HTML, CSS, JavaScript, and MySQL  
+***Programming Languages***: Java, C, C++, Python, HTML/CSS, JavaScript, and MySQL  
 ***Operating Systems***: Windows, Linux
-* Strong customer service skills learned from previous employment
 * Great time-management, organization, and work-ethic skills developed through working two part-time jobs alongside school and marching band.
 * Creative and good at problem solving
 * Great at working independently, as well as in groups
-* Detail Oriented
 * Willing to independently seek out information for solutions to problems
+
+### Related Employment: ###
+---
+[*Open Water Foundation*](http://openwaterfoundation.org/), June 2018 - Present  
+***Full Time Software Developer***:   
+* Working in Java and Python to do full-stack development on applications created for processing water data in time series format or geographical format from the state of Colorado.
+
+[*Open Water Foundation*](http://openwaterfoundation.org/), April 2017-May 2018  
+***Intern***
+* Working on JavaScript to create web visualizations for displaying water data from the state of Colorado. Colorado State University, Department of Occupational Therapy, Center for Community Partnerships
+
+
+[*Colorado State University, Department of Occupational Therapy, Center for Community Partnerships*](http://www.ot.chhs.colostate.edu/), August 2014 - May 2018  
+***Administrative/Computer Assistant***  
+* Developed skills in managing databases, creating spreadsheets, and video editing
+* Provided support for people with disabilities
+* Developed skills in working with team members as related to a job
+
+### Work Accomplishments: ###
+---
+* Conceived, designed and built our internal web application to allow employees to easily access needed tools and collaborate on shared data. [viz.openwaterfoundation.org](http://viz.openwaterfoundation.org/)
+* Connected time series processing software to the state of Colorado's decision support systems database to allow users to process data directly from the  API.  This dramatically improved user efficiency and accuracy compared to the prior solution of manually downloading current data.
+* Designed web 'stories' intended to be embedded in partner websites.  The stories are composed of data visualizations and descriptive text designed to assist in the understanding of collected water data. [southplattebasin.com/static/swsi-stories-sp-hydrology](http://southplattebasin.com/static/swsi-stories-sp-hydrology/)
+
+### Engagement: ###
+---
+[*Colorado State University Band, Fort Collins, CO*](https://music.colostate.edu/bands/), August 2013 - May 2018  
+* Member Presidential Pep Band, Marching Band and Basketball Pep Band practicing 15-20 hours per week for performances
+* Two years of Colorado State Universities Concert Band practicing 6 hours per week
 
 ### Education: ###
 ---
@@ -28,42 +55,3 @@ permalink: /resume/
 [Bachelor of Science, Computer Science/Concentration: Human-Centered Computing ](https://www.cs.colostate.edu/cstop/csacademics/csdegrees/csbachelors/hccmajor.php)  
 GPA: 3.232  
 Graduation: Spring 2018
-
-### Related Employment: ###
----
-[*Open Water Foundation*](http://openwaterfoundation.org/), May 2018 - Present  
-***Full Time Software Developer***:   
-* Worked in Java and Python.
-* Contributed to software that allows processing of water data, including [TSTool](https://www.colorado.gov/pacific/cdss/tstool) and [StateDMI](https://www.colorado.gov/pacific/cdss/statedmi).
-
-[*Open Water Foundation*](http://openwaterfoundation.org/), April 2017-May 2018  
-***Intern***
-* Worked 30 hours per week over the summer and 13 hours per week during school year.
-* Working on HTML/CSS/JavaScript to create web visualizations that enable those who make decisions about water to better understand water data.
-* Created several static web pages.
-* Some work in WordPress.
-
-[*Colorado State University, Department of Occupational Therapy, Center for Community Partnerships*](http://www.ot.chhs.colostate.edu/), August 2014 - May 2018  
-***Administrative/Computer Assistant***  
-* Worked between 6 - 10 hours a week
-* Developed skills in managing databases, creating spreadsheets, and video editing
-* Performed some basic social media marketing
-* Provided support for people with disabilities
-* Developed skills in working with team members as related to a job
-
-### Class Programming Projects: ###
----
-* Created a program over the course of 9 weeks that uses several different methods to compare image files, including creating a perceptron, and cluster them into specified number of clusters in C++.
-* Wrote several programs in Java that created and parsed through certain data structures such as trees, graphs, hash tables, linked lists, as well as stacks and queues.
-* All programs are independent works where I performed all coding, testing, and debugging.
-
-### Past-Employment: ###
----
-*Cinemark XD, Movie and Bistro, Fort Collins, CO*, May - November 2016  
-***Usher*** (Worked 10 - 15 hours a week)
-
-### Engagement: ###
----
-[*Colorado State University Band, Fort Collins, CO*](https://music.colostate.edu/bands/), August 2013 - May 2018  
-* Member Presidential Pep Band, Marching Band and Basketball Pep Band practicing 15-20 hours per week for performances
-* Two years of Colorado State Universities Concert Band practicing 6 hours per week
