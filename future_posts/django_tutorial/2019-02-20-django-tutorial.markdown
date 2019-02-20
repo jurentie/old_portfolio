@@ -394,7 +394,9 @@ STATICFILES_DIRS = [
 Import static files in templates by adding `{% raw %}{% load static %}{% endraw %}` to the top
 of `basic.html`. Add the dynamic path to the head of `basic.html`.
 ```html
+{% raw %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+{% endraw %}
 ```
 
 7. To put it all together map the URL's of the project site so that
