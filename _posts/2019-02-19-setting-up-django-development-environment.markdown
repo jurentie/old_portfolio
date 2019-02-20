@@ -133,7 +133,7 @@ manage.py new_django_project/
 $ py manage.py runserver
 ```
 
-- Open page at `localhost:8000` in your browser. You should be able to see the following page:
+- Open page at [localhost:8000](http://localhost:8000) in your browser. You should be able to see the following page:
 
 ![server running]({{ '/images/django_successfully_installed.png' | absolute_url }})
 
