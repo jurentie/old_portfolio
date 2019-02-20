@@ -391,7 +391,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 ```
-Import static files in templates by adding `{% load static %}` to the top
+Import static files in templates by adding `{% raw %}{% load static %}{% endraw %}` to the top
 of `basic.html`. Add the dynamic path to the head of `basic.html`.
 ```html
 <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
@@ -427,5 +427,5 @@ Start up the server running `py manage.py runserver` and navigate to the url loc
 ![login](images/login.png)  
 The page above is being displayed through a series of interconnected elements that has been defined above. The main application maps the path `myapp/` and the `myapp` `urls.py` file further maps `connection/` to the login page. Now if any information is entered into both the username and password fields the logged in page will be displayed.  
 ![logged in jurentie](images/loggedin_jurentie.png)  
-Again, this page is being displayed using a series of elements. Once all of the URL mapping takes place, the form in `loggedin.html` specifies `action="{% url 'login' %}"` to reroute the application to `myapp/login/` using the name specified in the urlpatters above. Django handles the logic and calls views.login after the form is submitted. Data is processed and the function looks up the user to see if the exist in `Dreamreal`. Above we can see that 'jurentie' is not in the database, but if we enter the user 'alexh':  
+Again, this page is being displayed using a series of elements. Once all of the URL mapping takes place, the form in `loggedin.html` specifies `action="{% raw %}{% url 'login' %}{% endraw %}"` to reroute the application to `myapp/login/` using the name specified in the urlpatters above. Django handles the logic and calls views.login after the form is submitted. Data is processed and the function looks up the user to see if the exist in `Dreamreal`. Above we can see that 'jurentie' is not in the database, but if we enter the user 'alexh':  
 ![logged in alexh](images/loggedin_alexh.png)  
