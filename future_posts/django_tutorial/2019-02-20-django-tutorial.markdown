@@ -358,7 +358,7 @@ child content into the parent using `block content` and `endblock`
 <p>You are: <strong>{{username}}</strong></p>
 {% if user_exists %}
 <p>User recognized in database</p>
-{% else %}{% endraw %}
+{% else %}
 <p>User not found in database</p>
 {% endif %}
 {% endblock %}
