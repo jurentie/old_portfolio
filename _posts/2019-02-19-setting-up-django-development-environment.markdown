@@ -142,14 +142,14 @@ $ py manage.py runserver
 
 ## Open project in Pycharm:
 If you would like to open this Django project in PyCharm you can follow
-the steps below:
+the steps below:  
 1. Open PyCharm and select **File** > **:open_file_folder: Open...**
-- Select and open the Django project you have created above:  
-![Open django project in PyCharm]({{ '/images/django_new_project.png' | absolute_url }})
+- Select and open the Django project you have created above:    
+![Open django project in PyCharm]({{ '/images/django_new_project.png' | absolute_url }})  
 You should now see the project imported into PyCharm as such:  
-![Imported PyCharm project]({{ '/images/django_pycharm_project.png' | absolute_url }})
+![Imported PyCharm project]({{ '/images/django_pycharm_project.png' | absolute_url }})  
 - Check that the virtual environment is set up appropriately within Pycharm.
 Go to **File** > **:wrench: Settings...**. Select **Project:new_django_project** >
 **Project Interpreter**. Navigate to the `Scripts` directory under your virtual environment
-that was set up above and select `python.exe`. It should look similar to the following:  
-![Django Pycharm project virtualenv]({{ '/images/django_pycharm_virtualenv.png' | absolute_url }})
+that was set up above and select `python.exe`. It should look similar to the following:   
+![Django Pycharm project virtualenv]({{ '/images/django_pycharm_virtualenv.png' | absolute_url }})  
