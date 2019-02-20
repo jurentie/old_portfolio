@@ -1,3 +1,13 @@
+---
+layout: post
+title:  "Intro to Django: Setup Your Development Environment"
+date:   2019-02-20 5:00:18 -0600
+categories:
+  - Django
+  - Python
+  - PyCharm
+---
+
 # Setting Up Your Django Development Environment (For Beginnners):
 
 How to set up a Django development environment.
