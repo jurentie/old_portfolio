@@ -8,8 +8,6 @@ categories:
   - PyCharm
 ---
 
-# Setting Up Your Django Development Environment (For Beginnners):
-
 How to set up a Django development environment.
 
 I recently delved into designing sites with Django. Django is described
