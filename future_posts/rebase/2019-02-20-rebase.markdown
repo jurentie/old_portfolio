@@ -1,0 +1,44 @@
+
+- Basic Rebase
+- Squash
+- Editing Commit History
+
+## Basic Rebase
+At the most basic level rebase can be used to update a feature branch with the
+most up to date version history in the master branch, or other branches for
+that matter.
+
+The standard way of accomplishing this is through `$ git merge`. However, this
+results in a messy, and un-necessary, merge commit on the branch. To avoid this
+use `$ git rebase`.
+
+When using rebase it is important to understand which branch is being applied
+to the other. The branch specified will be the branch you are rebasing *off of*.
+This can be easy to confuse. For example if working in a feature branch, let's
+just call it `feature-branch`, and wanting to merge `master`, the following
+would apply.
+
+* make sure master is up to update
+``` bash
+$ git checkout master
+$ git pull
+```
+* switch to the feature branch
+```bash
+$ git checkout feature-branch
+```
+* rebase master into feature-branch
+```bash
+$ git rebase master
+```
+
+That's all there is to it. Rebase will rewrite history so that the old commits
+are identical to new commits, but now the feature branch will be shown
+as branching off the master at the last commit made to master before rebasing.
+
+See images below:
+* Merge master into branch
+![merge](images/merge.svg)
+
+* Rebase master onto branch
+![rebase](images/rebase.svg)

@@ -1,0 +1,117 @@
+# Forks
+
+## Overview
+- A fork is a copy of a repository that can be made by any user or organization.
+- The main repo is referred to as the *upstream* repo.
+- You can bring changes from upstream repo into your local repo by synchronizing your fork with the upstream.
+- Changes to your fork do not affect original repo.
+- When creating a pull request you give anyone with write permission to push changes to your pull request branch.
+
+## Syncing a fork
+### I. Sync by Shell
+#### 1. Configure a remote for a fork
+
+- list current configured remote repository for your Fork
+``` bash
+$ git remote -v
+origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+```
+
+- Specify a new remote *upstream* repo that will be synced with the Fork
+``` bash
+$ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+```
+
+- Verify the new upstream repo
+``` bash
+$ git remote -v
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
+upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
+```
+
+#### 2. Syncing a Fork
+- Fetch branches and their respective commits from the upstream repo. Commits to `master` will be stored in a local branch, `upstream/master`.
+``` bash
+$ git fetch upstream
+remote: Counting objects: 75, done.
+remote: Compressing objects: 100% (53/53), done.
+remote: Total 62 (delta 27), reused 44 (delta 9)
+Unpacking objects: 100% (62/62), done.
+From https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY
+ * [new branch]      master     -> upstream/master
+```
+
+- Check out your fork's local `master` branch.
+``` bash
+$ git checkout master
+Switched to branch 'master'
+```
+
+- Merge the changes from `upstream/master` into your local `master` branch. This will sync your Fork's `master` with `upstream/master`.
+``` bash
+$ git merge upstream/master
+Updating a422352..5fdff0f
+Fast-forward
+ README                    |    9 -------
+ README.md                 |    7 ++++++
+ 2 files changed, 7 insertions(+), 9 deletions(-)
+ delete mode 100644 README
+ create mode 100644 README.md
+```
+
+### II. Sync by Browser
+*See [link](https://stackoverflow.com/questions/20984802/how-can-i-keep-my-fork-in-sync-without-adding-a-separate-remote/21131381#21131381) with pictures*
+
+*This is fairly complicated and command line would probably be easier*
+
+* Open Fork on GitHub and click the compare button.  
+This will open a page titled **Comparing Changes** and if you look carefully you'll have jumped to the upstream version of the repository. If you were to do a regular pull request then this makes sense as you'd be bringing your changes into the upstream version. But in this case we want to **flip the direction** and pull changes from the original version to our fork.
+* Change the **base fork** to your repo.  
+You're now back to your fork but you've also asked to compare two identical repositories so GitHub thinks you care about branches not forks. Click on **compare across forks** to get back your base fork option.
+* Change the **head fork** to the upstream (original) repository.  
+Note at this point that if you were in control of everything at GitHub you would probably just have put a little button in between the base for and head fork that would have flipped them for you rather than doing all these clicks. You might even had added in a separate button to check for upstream changes! But they do know that this is a bit of a silly hack and they're working hard on a bunch of other cool stuff so we'll let them off this one.
+* You'll see one of two options:  
+   - "There isn’t anything to compare" This means you're up to date and you don't have to do anything. Phew. :relieved:
+   - A list of commits. These are the changes that have happened in the repository since you forked your version. Continue to next step.
+* Create a pull request  
+Note that this pull request is **to you**! So you can confirm that it's ok and merge it when necessary. And if there are any merge conflicts then it's up to you to figure out what's gone wrong and sort them out.
+
+## Merging an upstream repo into your Fork
+*What is the difference between this and syncing a fork???*
+
+* Check out branch to merge to. Probably `master`.
+``` bash
+$ git checkout master
+```
+
+* Pull the desired branch from upstream repo. This will retain the commit history without modification
+``` bash
+$ git pull https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git BRANCH_NAME
+```
+
+* Commit the merge to your GitHub repository.
+``` bash
+$ git bash origin master
+```
+
+## Allowing changes to pull request branch created
+- Permission to commit is to those with push access to the upstream repo.
+- You may give those with write permission permission's to edit your pull request and push to your branch.
+
+see [here](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) for allowing permission when creating branch
+
+see [here](https://help.github.com/articles/allowing-changes-to-a-pull-request-branch-created-from-a-fork/#enabling-repository-maintainer-permissions-on-existing-pull-requests) for adding permissions after.
+
+## Commiting changes to a pull request
+[link](https://help.github.com/articles/committing-changes-to-a-pull-request-branch-created-from-a-fork/)
+
+* On GitHub navigate to main repo of the Fork
+* Clone the repo
+* `cd` into repo and checkout the compare branch of the repo where the original changes were made. If you navigate to the original pull request, you'll see the compare branch at the top of the pull request.
+* Make changes, commit, push
+``` shell
+$ git push origin BRANCH_NAME
+```
