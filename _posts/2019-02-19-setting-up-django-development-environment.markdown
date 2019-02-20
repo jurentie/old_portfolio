@@ -85,13 +85,13 @@ best for not confusing different versions of installed programs.
 I've found this to be the best way to run Django and ensure that it is
 found by the environment.
 
-1. Create a directory for you project and `cd` into it:
+Create a directory for you project and `cd` into it:
 ```
 $ mkdir django_project
 $ cd django_project
 ```
 
-- Create and start a virtual environment (install virtualenv if necessary):
+Create and start a virtual environment (install virtualenv if necessary):
 ```
 $ python -m pip install virtualenv
 ```
@@ -101,7 +101,7 @@ $ source env/Scripts/activate
 ```
 This should show `(env)` above command line
 
-- Install Django in virtual environment:
+Install Django in virtual environment:
 ```
 $ pip install django
 ```
@@ -111,19 +111,20 @@ $ py -m django --version
 2.1.5
 ```
 Check to see that the current running installation of django is running within
-the virtual environment. It should look similar to below:
+the virtual environment. It should look similar to below:  
 ```
 $ where django-admin
 C:\...\env\Scripts\django-admin.exe
-```
-- Start a new project
+```  
+
+Start a new project  
 ```
 $ django-admin startproject new_django_project
 $ ls
 env/ new_django_project/
 ```
 
-- `cd` into project and run the server for the first time.
+`cd` into project and run the server for the first time.  
 ```
 $ cd new_django_project
 $ ls
@@ -133,22 +134,25 @@ manage.py new_django_project/
 $ py manage.py runserver
 ```
 
-- Open page at [localhost:8000](http://localhost:8000) in your browser. You should be able to see the following page:
+Open page at [localhost:8000](http://localhost:8000) in your browser. You should be able to see the following page:  
 
-![server running]({{ '/images/django_successfully_installed.png' | absolute_url }})
+![server running]({{ '/images/django_successfully_installed.png' | absolute_url }})  
 
-- Press `Ctrl + C` to quit the server.
-- Run command `deactivate` to exit virtual environment.
+Press `Ctrl + C` to quit the server.  
+Run command `deactivate` to exit virtual environment.
 
 ## Open project in Pycharm:
 If you would like to open this Django project in PyCharm you can follow
 the steps below:  
-1. Open PyCharm and select **File** > **:open_file_folder: Open...**
-- Select and open the Django project you have created above:    
+
+Open PyCharm and select **File** > **:open_file_folder: Open...**
+Select and open the Django project you have created above:    
 ![Open django project in PyCharm]({{ '/images/django_new_project.png' | absolute_url }})  
+
 You should now see the project imported into PyCharm as such:  
 ![Imported PyCharm project]({{ '/images/django_pycharm_project.png' | absolute_url }})  
-- Check that the virtual environment is set up appropriately within Pycharm.
+
+Check that the virtual environment is set up appropriately within Pycharm.
 Go to **File** > **:wrench: Settings...**. Select **Project:new_django_project** >
 **Project Interpreter**. Navigate to the `Scripts` directory under your virtual environment
 that was set up above and select `python.exe`. It should look similar to the following:   
