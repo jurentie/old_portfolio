@@ -289,13 +289,14 @@ following templates to it.
 This first file will be the parent template that will create a simple
 html header to be inherited by all other templates.
 ```html
+{% raw %}
 <!-- myapp/templates/basic.html -->
 <!-- myapp/templates/base.html -->
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>{% raw %}{% block title %}{% endraw %}Django Tutorial{% raw %}{% endblock %}{% endraw %}</title>
+  <title>{% block title %}Django Tutorial{% endblock %}</title>
 </head>
 <body>
     <div class="header">
@@ -303,13 +304,12 @@ html header to be inherited by all other templates.
         <p>My supercool header</p>
     </div>
     <main>
-        {% raw %}
         {% block content %}
         {% endblock %}
-        {% endraw %}
     </main>
 </body>
 </html>
+{% endraw %}
 ```
 The following files make use of inheriting elements from `basic.html`
 and show how different template parameters can work to insert the
@@ -355,18 +355,13 @@ child content into the parent using `block content` and `endblock`
 {% raw %}
 {% extends 'basic.html' %}
 {% block content %}
-{% endraw %}
-<p>You are: <strong>{% raw %}{{username}}{% endraw %}</strong></p>
-{% raw %}
+<p>You are: <strong>{{username}}</strong></p>
 {% if user_exists %}
-{% endraw %}
 <p>User recognized in database</p>
-{% raw %}{% else %}{% endraw %}
+{% else %}{% endraw %}
 <p>User not found in database</p>
-{% raw %}
 {% endif %}
 {% endblock %}
-{% endraw %}
 ```
 
 7. Right now the header is pretty ugly. If wanting to add style to a
