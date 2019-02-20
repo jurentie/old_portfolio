@@ -362,6 +362,7 @@ child content into the parent using `block content` and `endblock`
 <p>User not found in database</p>
 {% endif %}
 {% endblock %}
+{% endraw %}
 ```
 
 7. Right now the header is pretty ugly. If wanting to add style to a
