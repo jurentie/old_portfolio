@@ -303,8 +303,10 @@ html header to be inherited by all other templates.
         <p>My supercool header</p>
     </div>
     <main>
+        {% raw %}
         {% block content %}
         {% endblock %}
+        {% endraw %}
     </main>
 </body>
 </html>
@@ -315,11 +317,13 @@ child content into the parent using `block content` and `endblock`
 ```HTML
 <!-- myapp/templates/login.html -->
 <!-- myapp/templates/login.html -->
+{% raw %}
 {% extends 'basic.html'%}
 {% block content %}
+{% endraw %}
 <form name="form" action="{% url 'login' %}"
       method="POST">
-    {% csrf_token %}
+    {% raw %}{% csrf_token %}{% endraw %}
     <div style="max-width:470px;">
         <center>
             <input type="text" style="margin-left:20%;"
@@ -343,20 +347,28 @@ child content into the parent using `block content` and `endblock`
         </center>
     </div>
 </form>
+{% raw %}
 {% endblock %}
+{% endraw %}
 ```
 
 ```HTML
 <!--- myapp/templates/loggedin.html -->
+{% raw %}
 {% extends 'basic.html' %}
 {% block content %}
-<p>You are: <strong>{{username}}</strong></p>
+{% endraw %}
+<p>You are: <strong>{% raw %}{{username}}{% endraw %}</strong></p>
+{% raw %}
 {% if user_exists %}
+{% endraw %}
 <p>User recognized in database</p>
-{% else %}
+{% raw %}{% else %}{% endraw %}
 <p>User not found in database</p>
+{% raw %}
 {% endif %}
 {% endblock %}
+{% endraw %}
 ```
 
 7. Right now the header is pretty ugly. If wanting to add style to a
