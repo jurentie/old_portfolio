@@ -320,10 +320,9 @@ child content into the parent using `block content` and `endblock`
 {% raw %}
 {% extends 'basic.html'%}
 {% block content %}
-{% endraw %}
 <form name="form" action="{% url 'login' %}"
       method="POST">
-    {% raw %}{% csrf_token %}{% endraw %}
+    {% csrf_token %}
     <div style="max-width:470px;">
         <center>
             <input type="text" style="margin-left:20%;"
@@ -347,7 +346,6 @@ child content into the parent using `block content` and `endblock`
         </center>
     </div>
 </form>
-{% raw %}
 {% endblock %}
 {% endraw %}
 ```
