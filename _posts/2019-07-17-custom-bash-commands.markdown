@@ -43,13 +43,15 @@ There are two ways to customize commands in Git Bash.
 
    Saves a lot of time.
 
-I continue to recognize long commands or repeated orders of multiple commands, that I repeat on a daily basis and would benefit from shortening to a single command, whether it be by alias or a new custom command script. It might also be beneficial to learn how to write custom commands with a bash script, this requires a bit more effort and will be covered in a future post.
+I continue to recognize long commands or repeated orders of multiple commands, that I use on a daily basis and could benefit from shortening to a single command, whether it be by alias or a new custom command script. 
 
 Sections:
 
-* [Create an Alias](create-an-alias)
-  * [Temporary Alias](temporary-alias)
-  * [Persistent Alias](persistent-alias)
+* [Create an Alias](#create-an-alias)
+  * [Temporary Alias](#temporary-alias)
+  * [Persistent Alias](#persistent-alias)
+* [Creating a Custom Bash Script](#creating-a-custom-bash-script)
+* [Wrapping Up](#wrapping-up)
 
 ## Create an Alias ##
 
